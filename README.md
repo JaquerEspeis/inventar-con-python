@@ -21,7 +21,7 @@ La traducción de este libro la estamos haciendo en comunidad. Invitamos a parti
 
 Si saben inglés y español, nos pueden ayudar [revisando las traducciones en progreso](https://github.com/JaquerEspeis/inventar-con-python/pulls). O pueden traducir un nuevo capítulo; para esto [reporten un issue](https://github.com/JaquerEspeis/inventar-con-python/issues/new) con el número del capítulo que quieren traducir, para que no dupliquemos el trabajo.
 
-Para quienes no saben inglés, igual nos pueden ayudar revisando las traducciones ya aceptadas, que van a encontrar en la Tabla de contenido.
+Para quienes no saben inglés, igual nos pueden ayudar revisando las traducciones ya aceptadas, que van a encontrar en la [Tabla de contenido](#tabla-de-contenido).
 
 Si tienen dudas sobre Python, github, el JáquerEspeis o cómo empezar a colaborar con este proyecto, también pueden [reportar un issue](https://github.com/JaquerEspeis/inventar-con-python/issues/new).
 
