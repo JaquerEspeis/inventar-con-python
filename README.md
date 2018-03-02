@@ -12,8 +12,9 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 
 [@elopio](https://github.com/elopio), con contribuciones de:
 
-* [@tian2992](https://github.com/tian2992)
 * [@jamescr](https://github.com/jamescr)
+* [@kanguarrovi](https://github.com/kanguarrovi)
+* [@tian2992](https://github.com/tian2992)
 
 ## Contribuír
 
