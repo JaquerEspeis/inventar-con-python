@@ -7,6 +7,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 ## Tabla de contenido
 
  * [Introducción](introduccion.md)
+ * [1 El «shell» interactivo](capitulo1.md)
 
 ## Mantenedor
 

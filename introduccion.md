@@ -338,4 +338,4 @@ siguiente:
 Ahora que ya sabe cómo pedir ayuda, ¡usted aprenderá a programar sus propios
 juegos de computadora al instante!
 
-[Siguiente: Capítulo 1: El «shell» interactivo](chapter1.md)
+[Siguiente: Capítulo 1: El «shell» interactivo](capitulo1.md)
