@@ -1,10 +1,10 @@
-# 1 El «shell» interactivo
+# 1 La consola interactiva
 
 ![Matraz de Erlenmeyer](https://inventwithpython.com/invent4thed/images/00016.jpeg "Matraz de Erlenmeyer")
 
 Antes de que pueda hacer juegos, necesitará aprender unos cuantos conceptos
-básicos de programación. Empezará en este capítulo aprendiendo cómo usar el
-«shell» interactivo de Python y ejecutar aritmética básica.
+básicos de programación. Empezará en este capítulo aprendiendo cómo usar la
+consola interactiva de Python y ejecutar aritmética básica.
 
 ***
 Temas cubiertos en este capítulo:
@@ -19,16 +19,16 @@ Temas cubiertos en este capítulo:
 ## Algo de matemática simple
 
 Abra IDLE siguiendo los pasos en «Abriendo IDLE» en la página xxvi. Primero,
-usará Python para resolver algunos problemas de matemática simples. El «shell»
-interactivo puede funcionar justo como una calculadora. Escriba **`2 + 2`** en
-el «shell» interactivo, en el «prompt» `>>>` y presione `ENTER`. (En algunos
+usará Python para resolver algunos problemas de matemática simples. La consola
+interactiva puede funcionar justo como una calculadora. Escriba **`2 + 2`** en
+la consola interactiva, en el «prompt» `>>>` y presione `ENTER`. (En algunos
 teclados, esta es la tecla `RETURN`.) La Figura 1-1 muestra cómo se ve este
-problema de matemática en el shell interactivo--note que responde con el número
+problema de matemática en la consola interactiva--note que responde con el número
 `4`.
 
-![Escribiendo 2+2 en el «shell» interactivo](https://inventwithpython.com/invent4thed/images/00022.jpeg "Escribiendo 2+2 en el «shell» interactivo")
+![Escribiendo 2+2 en la consola interactiva](https://inventwithpython.com/invent4thed/images/00022.jpeg "Escribiendo 2+2 en la consola interactiva")
 
-Figura 1-1: Escribiendo 2+2 en el «shell» interactivo
+Figura 1-1: Escribiendo 2+2 en la consola interactiva
 
 Este problema de matemática es una simple instrucción de programación. El signo
 de más (`+`) le indica a la computadora que sume los números `2` y `2`.
@@ -56,7 +56,7 @@ Los *enteros* (o *ints*, para abreviar, del inglés «integers») son números c
 «floating») son fracciones o números con punto decimal como 3.5, 42.1 y 5.0. En
 Python, 5 es un entero, pero 5.0 es un flotante. Estos números se llaman
 *valores*. (Más adelante aprenderemos sobre otros tipos de valores además de
-los números.) En el problema matemático que escribió en el «shell», 2 y 2 son
+los números.) En el problema matemático que escribió en la consola, 2 y 2 son
 números enteros.
 
 ## Expresiones
@@ -71,7 +71,7 @@ expresiones en segundos.
 
 Figura 1-2: Una expresión está formada por valores y operadores
 
-Intente escribir algunas de estas expresiones en el «shell» interactivo,
+Intente escribir algunas de estas expresiones en la consola interactiva,
 presione `ENTER` después de cada una:
 
 ***
@@ -91,7 +91,7 @@ Estas expresiones todas parecen ecuaciones regulares de matemática, pero note
 todos los espacios en el ejemplo `2  +        2`. En Python, se puede agregar
 cualquier número de espacios entre valores y operadores. Sin embargo, siempre
 debe empezar las instrucciones al inicio de la línea (sin espacios) cuando las
-escribe en el «shell» interactivo.
+escribe en la consola interactiva.
 
 ## Evaluando expresiones
 
@@ -120,8 +120,8 @@ se evaluará al valor `12.0` a través de los siguientes pasos:
 
 ![Evaluación paso a paso de 8 * 3 / 2 + 2 + 7 - 9](https://inventwithpython.com/invent4thed/images/00028.jpeg "Evaluación paso a paso de 8 * 3 / 2 + 2 + 7 - 9")
 
-Aunque la computadora esta ejecutando todos estos pasos, estos no se ven en en
-«shell» interactivo. El «shell» interactivo solo le muestra el resultado:
+Aunque la computadora esta ejecutando todos estos pasos, estos no se ven en la
+consola interactiva. La consola interactiva solo le muestra el resultado:
 
 ***
 <pre>
@@ -136,7 +136,7 @@ con aunque sea un valor flotante también evalúan a valores flotantes, entonces
 
 ## Errores de sintaxis
 
-Cuando escribe `5 +` en el «shell» interactivo, recibirá el siguiente mensaje
+Cuando escribe `5 +` en la consola interactiva, recibirá el siguiente mensaje
 de error:
 
 ***
@@ -156,8 +156,8 @@ sólo de dar instrucciones para que la computadora siga, sino también de saber
 cómo dar esas instrucciones de forma correcta.
 
 Pero, no se preocupe de cometer errores. Los errores no dañarán su computadora.
-Sólo vuelva a escribir la instrucción de forma correcta en el «shell»
-interactivo en el siguiente «prompt» de `>>>`.
+Sólo vuelva a escribir la instrucción de forma correcta en la consola
+interactiva en el siguiente «prompt» de `>>>`.
 
 ## Almacenando valores en variables
 
@@ -168,7 +168,7 @@ puede contener un valor.
 Una *sentencia de asignación* almacenará un valor dentro de una variable.
 Escriba un nombre para la variable, seguido del signo de igual (`=`), que se
 llama *operador de asignación*, y luego el valor a almacenar en la variable.
-Por ejemplo, escriba lo siguiente en el «shell» interactivo:
+Por ejemplo, escriba lo siguiente en la consola interactiva:
 
 ***
 <pre>
@@ -189,7 +189,7 @@ aparece para que pueda escribir otra instrucción.
 
 A diferencia de las expresiones, las *sentencias* son instrucciones que no
 evalúan a ningún valor. Por eso es que no hay un valor mostrado en la siguiente
-línea en el «shell» interactivo después de `spam = 15`. Si tiene confusión
+línea en la consola interactiva después de `spam = 15`. Si tiene confusión
 acerca de cuáles instrucciones son expresiones y cuáles son sentencias,
 recuerde que las expresiones evalúan a un único valor. Cualquier otro tipo de
 instrucción es una sentencia.
@@ -206,7 +206,7 @@ tocino, en español) son ejemplos usados en este libro.
 
 La primera vez que una variable se usa en una sentencia de asignación,
 Python va a crear esa variable. Para revisar qué valor hay en una variable,
-escriba el nombre de la variable en el «shell» interactivo:
+escriba el nombre de la variable en la consola interactiva:
 
 ***
 <pre>
@@ -218,7 +218,7 @@ escriba el nombre de la variable en el «shell» interactivo:
 
 Las expresión `spam` evalúa a el valor dentro de la variable spam: `15`.
 También puede usar variables en expresiones. Pruebe escribir lo siguiente en
-el «shell» interactivo:
+la consola interactiva:
 
 ***
 <pre>
@@ -252,7 +252,7 @@ NameError: name 'spma' is not defined
 El error aparece porque hay una variable `spam` pero no una variable `spma`.
 
 Puede cambiar el valor almacenado en una variable escribiendo otra sentencia
-de asignación. Por ejemplo, escriba lo siguiente en el shell interactivo:
+de asignación. Por ejemplo, escriba lo siguiente en la consola interactiva:
 
 ***
 <pre>
@@ -291,8 +291,8 @@ Incluso puede usar el valor de la variable `spam` para asignar un nuevo valor a
 
 La sentencia de asignación `spam = spam + 5` dice, «El nuevo valor de la
 variable `spam` será el valor actual de `spam` más cinco». Para seguir
-aumentando el valor de `spam` en `5` muchas veces, escriba lo siguiente en el
-«shell» interactivo:
+aumentando el valor de `spam` en `5` muchas veces, escriba lo siguiente en
+la consola interactiva:
 
 ***
 <pre>
@@ -328,7 +328,7 @@ en la Figura 1-5.
 
 Figura 1-5: Cada una de las variables eggs y bacon almacenan variables.
 
-Escriba `spam = bacon + eggs` en el «shell» interactivo, y luego revise el
+Escriba `spam = bacon + eggs` en la consola interactiva, y luego revise el
 nuevo valor de `spam`.
 
 ***

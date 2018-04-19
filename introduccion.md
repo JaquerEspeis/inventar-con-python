@@ -85,7 +85,7 @@ depuración. Se explican nuevos conceptos de programación conforme los juegos
 los utilizan, y los capítulos están pensados para ser leídos en orden. Aquí hay
 un breve resumen de lo que encontrará en cada capítulo.
 
-* **Capítulo 1: El «shell» interactivo** explica cómo el «shell» interactivo de
+* **Capítulo 1: La consola interactiva** explica cómo la consola interactiva de
   Python se puede usar para experimentar con código una línea a la vez.
 * **Capítulo 2: Escribiendo programas** cubre cómo escribir programas completos
   en el editor de archivos de Python.
@@ -292,14 +292,14 @@ distinta en cada sistema operativo:
   parte de arriba de la pantalla. Luego clic en **Programación** y
   **IDLE 3**.
 
-La ventana que aparece cuando ejecuta por primera vez IDLE es el **«shell»
-interactivo**, como se muestra en la Figura 1. Puede escribir instrucciones de
-Python en el «shell» interactivo en el «prompt» >>> y Python las realizará.
+La ventana que aparece cuando ejecuta por primera vez IDLE es la **consola
+interactiva**, como se muestra en la Figura 1. Puede escribir instrucciones de
+Python en la consola interactiva en el «prompt» >>> y Python las realizará.
 Después de que la computadora realiza las instrucciones, un nuevo «prompt» >>>
 esperará por su siguiente instrucción.
 
-![El «shell» interactivo del programa IDLE](https://inventwithpython.com/invent4thed/images/00021.jpeg "El «shell» interactivo del programa IDLE")
-Figura 1: El «shell» interactivo del programa IDLE
+![La consola interactiva del programa IDLE](https://inventwithpython.com/invent4thed/images/00021.jpeg "La consola interactiva del programa IDLE")
+Figura 1: La consola interactiva del programa IDLE
 
 ## Encontrando ayuda en línea
 
@@ -338,4 +338,4 @@ siguiente:
 Ahora que ya sabe cómo pedir ayuda, ¡usted aprenderá a programar sus propios
 juegos de computadora al instante!
 
-[Siguiente: Capítulo 1: El «shell» interactivo](capitulo1.md)
+[Siguiente: Capítulo 1: La consola interactiva](capitulo1.md)

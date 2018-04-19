@@ -7,7 +7,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 ## Tabla de contenido
 
  * [Introducción](introduccion.md)
- * [1 El «shell» interactivo](capitulo1.md)
+ * [1 La consola interactiva](capitulo1.md)
  * [3 Adivine el número](capitulo3.md)
 
 ## Mantenedor
