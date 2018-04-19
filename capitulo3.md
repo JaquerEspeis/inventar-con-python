@@ -921,4 +921,4 @@ de flujo, y muchas otras funciones que vienen con Python. Hay también
 diferentes tipos de I/O más allá del texto, como la entrada de un ratón y la
 salida de sonido y gráficos.
 
-[Previo: Escribiendo programas](capitulo2.md) | [Siguiente: Capítulo 4: Un programa que cuenta chistes](capitulo4.md)
+[Previo: Capítulo 2: Escribiendo programas](capitulo2.md) | [Siguiente: Capítulo 4: Un programa que cuenta chistes](capitulo4.md)
