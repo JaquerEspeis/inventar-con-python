@@ -17,6 +17,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 * [@jamescr](https://github.com/jamescr)
 * [@kanguarrovi](https://github.com/kanguarrovi)
 * [@tian2992](https://github.com/tian2992)
+* [@dtec83](https://github.com/dtec83)
 
 ## Contribuír
 
