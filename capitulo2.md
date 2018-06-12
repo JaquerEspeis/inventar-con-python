@@ -302,7 +302,7 @@ El argumento de la llamada `print()` en la línea 2 es `Hola mundo`, y
 el argumento de la llamada `print()` en la línea 3 es `¿Cuál es su nombre?`.
 A esto se le llama *pasar* el argumento a la función.
 
-##La función *input()*
+## La función *input()*
 
 La línea 4 es una declaración de asignación de una variable, *myName*,
 y una función de llamada, `input()`:
@@ -330,7 +330,7 @@ evalúa el la cadena de caracteres 'Albert'. La evaluación se ve como esto:
 
 Así es cómo el valor de la cadena de caracteres es almacenado en la variable myName.
 
-##Expresiones en llamadas a funciones
+## Expresiones en llamadas a funciones
 
 La última línea de código en el programa Hola mundo es otra llamada a
 la función `print()`:
@@ -379,7 +379,7 @@ Gusto en conocerle, caca.
 </pre>
 ***
 
-##Nombrar variables
+## Nombrar variables
 
 <p align="justify">
 Dar a las variables un nombre descriptivo hace más fácil entender lo que
@@ -419,7 +419,7 @@ Estas son *convenciones* opcionales, pero estandariza la forma de
 programar en Python.
 </p>
 
-##Resumen
+## Resumen
 
 Una vez que entienda como usar cadenas de caracteres y funciones, ya puede 
 comenzar a hacer programas que interactúen con las usuarias. Esto es 
