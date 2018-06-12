@@ -8,6 +8,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 
  * [Introducción](introduccion.md)
  * [1 La consola interactiva](capitulo1.md)
+ * [2 Escribiendo programas](capitulo2.md)
  * [3 Adivine el número](capitulo3.md)
  * [4 Un programa que cuenta Chistes](capitulo4.md)
 
