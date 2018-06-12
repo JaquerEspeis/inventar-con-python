@@ -443,4 +443,4 @@ de hacer que la ejecución del programa vaya de diferentes maneras, no
 sólo de arriba hacia bajo del programa. Una vez que aprenda esto, 
 ¡estará lista para crear juegos!
 
-[Previo: Capítulo 1](capitulo1.md) | [Siguiente: Capítulo 3: Adivine el número](capitulo3.md)
+[Previo: Capítulo 1: La consola interactiva](capitulo1.md) | [Siguiente: Capítulo 3: Adivine el número](capitulo3.md)
