@@ -110,7 +110,7 @@ Ellas se fueron volando en un helicóptero verde    urquesa.
 
 ***
 
-sta instrucción no imprimió la barra invertida porque la `t` en `turquesa` fue interpretada como un carácter de escape debido a que estaba después de una barra invertida. El carácter de escape `\t` simula la presión de la tecla TAB del teclado.
+Esta instrucción no imprimió la barra invertida porque la `t` en `turquesa` fue interpretada como un carácter de escape debido a que estaba después de una barra invertida. El carácter de escape `\t` simula la presión de la tecla TAB del teclado.
 
 Esta línea le dará la salida correcta:
 
