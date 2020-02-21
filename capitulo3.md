@@ -97,7 +97,7 @@ escribió con el código del libro en la herramienta de diff en línea en
 23.     if guess == number:
 24.         break
 25.
-26. if guess == number:`
+26. if guess == number:
 27.     guessesTaken = str(guessesTaken + 1)
 28.     print('¡Buen trabajo, ' + myName + '! ¡Adivinó mi número en ' +
           guessesTaken + ' intentos!')
