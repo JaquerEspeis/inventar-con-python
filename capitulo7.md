@@ -226,3 +226,5 @@ Si usted salta a escribir el código primero, puede descubrir problemas que requ
 Además, cada vez que cambie su código, usted corre el riesgo de crear nuevos errores al cambiar muy poquito o mucho.
 Es mucho más eficiente conocer qué es lo que quiere construir antes de construirlo.
 Ahora que tenemos un diagrama de flujo, ¡vamos a crear el programa Ahorcado en el capítulo 8!
+
+[Previo: Capítulo 6: Usando el depurador](capitulo6.md) | [Siguiente: Capítulo 8: Escribiendo el código del ahorcado](capitulo8.md)
