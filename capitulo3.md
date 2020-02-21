@@ -367,7 +367,7 @@ Escriba lo siguiente en la consola interactiva:
 ***
 <pre>
 >>> <b>for i in range(3):
-    print('¡Hola! i tiene un valor de', i)</b>
+        print('¡Hola! i tiene un valor de', i)</b>
 
 ¡Hola! i tiene un valor de 0
 ¡Hola! i tiene un valor de 1
