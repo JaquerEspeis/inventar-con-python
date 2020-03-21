@@ -197,13 +197,13 @@ presionar ENTER. Puede saber cuando una nueva instrucción empieza viendo a los
 números de línea a la izquierda. Este ejemplo tiene dos instrucciones:
 
 ```
-1. print('This is the first instruction!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1. print('¡Esta es la primera instrucción!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
    xxxxxxxxxxxx')
-2. print('This is the second instruction, not the third instruction.')
+2. print('Esta es la segunda instrucción, no la tercera instrucción.')
 ```
 
-La primera instrucción continúa y sigue en la segunda en la página, pero la
-segunda no tiene un número de línea, entonces puede ver que es todavía la
+La primera instrucción continúa y sigue en la segunda línea en la página, pero la
+segunda línea no tiene un número de línea, entonces puede ver que es todavía la
 linea 1 del código.
 
 ## Descargando e instalando Python
@@ -247,7 +247,7 @@ muestra en la pantalla para instalar Python, como se lista aquí:
 3. Haga clic en **Siguiente** para saltarse la sección de Personalización de
    Python.
 
-En OS X, descargue le instalador para Mac OS X 64-bit/32-bit de
+En OS X, descargue el instalador para Mac OS X 64-bit/32-bit de
 [https://www.python.org/downloads/release/python-344/](https://www.python.org/downloads/release/python-344/)
 y luego dele doble clic. Siga las instrucciones que el instalador muestra en la
 pantalla para instalar Python, como se lista aquí:
