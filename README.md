@@ -15,16 +15,15 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 
 ## Mantenedores
 
-[@elopio](https://github.com/elopio) y [@rlmrjmnz](https://github.com/rlmrjmnz), con contribuciones de:
+[@elopio](https://github.com/elopio), [@rlmrjmnz](https://github.com/rlmrjmnz) y [@jamescr](https://github.com/jamescr), con contribuciones de:
 
-* [@jamescr](https://github.com/jamescr)
 * [@kanguarrovi](https://github.com/kanguarrovi)
 * [@tian2992](https://github.com/tian2992)
 * [@dtec83](https://github.com/dtec83)
 * [@CespedX](https://github.com/CespedX)
 * [@JDuartePi](https://github.com/JDuartePi)
 
-## Contribuír
+## Contribuir
 
 La traducción de este libro la estamos haciendo en comunidad. Invitamos a participar a todas las personas que quieran aprender o enseñar sobre Python.
 
