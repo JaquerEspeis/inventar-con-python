@@ -10,7 +10,6 @@ el cual hace ambas cosas. Aprenderá a almacenar texto en variables, combinar
 texto, y mostrar el texto en la pantalla. El programa que usted creará muestra 
 el saludo Hello world y pregunta por el nombre de la usuaria.
 </p>
-
 ***
 Temas cubiertos en este capítulo:
 * Strings (cadenas de caracteres)
@@ -29,7 +28,7 @@ Temas cubiertos en este capítulo:
 
 En Python, los valores de texto se llaman cadenas de caracteres. Las cadenas de
 caracteres pueden ser usadas igual que como se usan valores enteros o valores 
-flotantes.Usted puede almacenar cadenas de caracteres en variables. En el código, 
+flotantes. Usted puede almacenar cadenas de caracteres en variables. En el código, 
 las cadenas de caracteres empiezan y terminan con comillas simples ('').
 Escriba el siguiente código en la consola interactiva:
 
@@ -47,7 +46,6 @@ interactiva, verá el contenido de la variable spam. Recuerde, Python evalua
 las variables como el valor almacenado dentro de la variable. En este caso,
 este es la cadena de caracteres 'hola'.
 </p>
-
 ***
 <pre>
 >>> <b>spam = 'hola'</b>
@@ -76,8 +74,8 @@ son ejemplos de cadenas de caracteres:
 
 Usted puede combinar cadenas de caracteres con operadores para crear expresiones,
 igual que como lo había hecho con los valores enteros y flotantes. Cuando combina
-dos cadenas de caracteres con el operador `+`, esa acción es llamada concatenación
-de cadenas de caracteres. Ejecute 'Hola' + 'mundo' en la consola interactiva:
+dos cadenas de caracteres con el operador `+`, esa acción es llamada *concatenación
+de cadenas de caracteres*. Ejecute 'Hola' + 'mundo' en la consola interactiva:
 
 ***
 <pre>
@@ -107,33 +105,33 @@ concatena cadenas de caracteres, pero suma valores enteros y flotantes.
 ## Escribiendo programas en el editor de archivos IDLE
 
 Hasta el momento, usted ha estado escribiendo instrucciones dentro de la consola
-interaractiva, una por una. Cuando usted escribe programas, se ingresan varias 
-intrucciones y todas son ejecutadas a la vez, y eso es lo que hará a 
+interactiva, una por una. Cuando usted escribe programas, se ingresan varias 
+instrucciones y todas son ejecutadas a la vez, y eso es lo que hará a 
 continuación. ¡Es hora de escribir su primer programa!
 
-Además del intérprete, IDLE tiene otra parte llamada editor de archivos.
-Para abrirlo, haga clic en la parte de Archivo del menu localizado en 
-la parte superior superior de la consola interactiva. Luego seleccione Nuevo archivo.
+Además del intérprete, IDLE tiene otra parte llamada *editor de archivos*.
+Para abrirlo, haga clic en el menú **Archivo** localizado en 
+la parte superior superior de la consola interactiva. Luego seleccione **Nuevo archivo**.
 Una ventana en blanco aparecerá para que escriba el código del programa dentro de 
 esta, como se muestra en la Figura 2-1.
 
 ![Editor de texto IDLE](https://inventwithpython.com/invent4thed/images/00035.jpeg "Editor de texto IDLE")
 
-Figura 2-1: el editor de archivos (izquierda) y la consola interactiva (derecha)
+*Figura 2-1: el editor de archivos (izquierda) y la consola interactiva (derecha)*
 
 Ambas ventanas parecen similares, pero recuerde: la consola interactiva tiene el 
 «prompt» >>>, mientras que el editor de archivos no.
 
 ## Creando el programa Hola mundo
 
-Es una tradicción para las programadoras que el primer programa que realicen
-muestre Hola mundo en la pantalla. Ahora mismo usted creará su primer 
+Es una tradición para las programadoras que el primer programa que realicen
+muestre *Hola mundo* en la pantalla. Ahora mismo usted creará su primer 
 programa Hola mundo.
 
 ![Usando Python 3 en vez de Python 2](https://inventwithpython.com/invent4thed/images/00038.jpeg "Usando Python 3 en vez de Python 2")
 
 Cuando escriba su programa, recuerde no incluir los números al principio de
-cada línea de código. Estos números están incluídos en este libro para poder
+cada línea de código. Estos números están incluidos en este libro para poder
 referenciar la línea donde se encuentra el código. La esquina inferior derecha
 del editor de archivos le indicará donde se encuentra el cursor, de esta manera
 podrá verificar en cual línea de código se encuentra. La figura 2-2 muestra
@@ -142,66 +140,67 @@ columna 0 (de izquierda a derecha).
 
 ![Posicionamiento del cursor](https://inventwithpython.com/invent4thed/images/00039.jpeg "Posicionamiento del cursor")
 
-Figura 2-2: La esquina inferior derecha del editor de archivos le dice donde
-se encuentra el cursor.
+*Figura 2-2: La esquina inferior derecha del editor de archivos le dice donde
+se encuentra el cursor.*
 
 Escriba el siguiente texto dentro de la nueva ventana del editor de archivos.
 Este es el *código fuente* del programa. Contiene las instrucciones que Python
 va a seguir cuando el programa sea ejecutado.
 
-*hello.py*
+*hola.py*
 
 ***
 <pre>
-1. # Este programa dice hola y pregunta por mi nombre.
-2. print('Hola mundo')
-3. print('¿Cuál es su nombre?')
-4. myName = input()
-5. print('Gusto en conocerle, ' + myName)
+1. # Este programa saluda y pregunta por mi nombre.
+2. print('¡Hola mundo!')
+3. print('¿Cómo te llamas?')
+4. miNombre = input()
+5. print('Es un placer conocerte, ' + miNombre)
 </pre>
+
 ***
 
 IDLE marcará las diferentes instrucciones con colores distintos. Después de que
 haya escrito el código, la ventana deberá verse como la Figura 2-3.
 
-![Ventana IDLE](https://inventwithpython.com/invent4thed/images/00041.jpeg "Ventana IDLE")
+![Ventana IDLE](images/00041.png "Ventana IDLE")
 
-Figura 2-3: el editor de archivos se verá como esto cuando haya escrito el código.
+*Figura 2-3: el editor de archivos se verá como esto cuando haya escrito el código.*
 
 Verifique si la ventana de su IDLE se ve parecida.
 
 ## Guardando el programa
 
 Cuando usted haya escrito su código fuente, guárdelo haciendo clic en
-Archivo -> Guardar como. O presionando Ctrl + S para
+**Archivo -> Guardar como**. O presionando CTRL+S para
 guardarlo con el atajo del teclado. La Figura 2-4 muestra la ventana de
-Guardar cuando se abre. Nombre el archivo como *hello.py* en
+Guardar cuando se abre. Nombre el archivo como *hola.py* en
 área de texto y luego haga clic en **Guardar** .
 
-![Ventana de guardado](https://inventwithpython.com/invent4thed/images/00043.jpeg "Ventana de guardado")
+![Ventana de guardado](images/00043.png "Ventana de guardado")
 
-Figura 2-4: Guardando su programa.
+*Figura 2-4: Guardando su programa.*
 
 Debería guardar sus programas con frecuencia mientras los escribe.
 De esa manera, si la computadora falla o se sale accidentalmente del 
 IDLE, no perderá mucho trabajo.
 
-Para cargar su programa previamente guardado, haga clic en Archivo -> Abrir 
-Seleccione el archivo *hello.py* en la ventana que aparece y haga clic sobre
-el botón Abrir. Su programa *hello.py* se abrirá en el editor de archivos.
+Para cargar su programa previamente guardado, haga clic en **Archivo -> Abrir** 
+Seleccione el archivo *hola.py* en la ventana que aparece y haga clic sobre
+el botón **Abrir**. Su programa *hola.py* se abrirá en el editor de archivos.
 
 ## Ejecutando su programa
 
-Es hora de ejecutar el programa. Haga clic en Ejecutar -> Ejecutar Módulo.
+Es hora de ejecutar el programa. Haga clic en **Ejecutar -> Ejecutar Módulo**.
 O sólo presione F5 desde el editor de archivos (FN-5 en OS X). Su programa
 será ejecutado desde la consola interactiva.
 
 Escriba su nombre cuando el programa se lo solicite. Se parecerá a
 la Figura 2-5.
 
-![Consola interactiva despues de ejecutar hello.py](https://inventwithpython.com/invent4thed/images/00045.jpeg "Consola interactiva despues de ejecutar hello.py")
+![Consola interactiva después de ejecutar hola.py](images/00045.png "Consola interactiva después de ejecutar hola.py")
 
-Figura 2-5: Consola interactiva despues de ejecutar hello.py
+*Figura 2-5: Consola interactiva después de ejecutar hola.py*
 
 Cuando escriba su nombre y presione ENTER, el programa la saludará por
 su nombre. ¡Felicidades! Ha escrito su primer programa y ahora es una
@@ -209,13 +208,12 @@ programadora. Presione F5 de nuevo para ejecutar el programa una segunda
 vez y escriba un nombre distinto.
 
 Si tiene algún error, compare su código con el código de este libro en
-la [Herramienta Diff](https://nostarch.com/inventwithpython#diff)
-(En idioma inglés) Copie y pege su código desde el editor de archivos a
+la [Herramienta Diff](https://inventwithpython.com/es/diff/). Copie y pegue su código desde el editor de archivos a
 la página web y haga clic en el botón que dice <b>Compare</b>. Esta 
 herramienta destacará cualquier diferencia que haya entre su código y
 el código en este libro, como se muestra en la Figura 2-6.
 
-Mientras programa, si tiene un <b>NameError</b> que se ve como el de
+Mientras programa, si tiene un *NameError* que se ve como el de
 a continuación, eso significa que está utilizando Python2 en lugar de
 Python3.
 
@@ -223,23 +221,24 @@ Python3.
 <pre>
 Hola mundo
 ¿Cuál es su nombre?
-<b>Albert</b>
+<b>Alberto</b>
 Traceback (most recent call last):
   File "C:/Python26/test1.py", line 4, in <module>
     myName = input()
   File "<string>", line 1, in <module>
-NameError: name 'Albert' is not defined
+NameError: name 'Alberto' is not defined
 </pre>
+
 ***
 
 Para solucionar este problema, instale Python3 y vuelva a ejecutar el
 programa. (Vaya a "Descargar e instalar Python" en la página xxv.)
 
-![Herramienta Diff](https://inventwithpython.com/invent4thed/images/00048.jpeg "Herramienta Diff")
+![Herramienta Diff](images/00048.png "Herramienta Diff")
 
-Figura 2-6: Usando la herramienta Diff en https://www.nostarch.com/inventwithpython#diff
+*Figura 2-6: Usando la herramienta Diff en https://inventwithpython.com/es/diff/#diff*
 
-## Como funciona el programa Hello World
+## Como funciona el programa "Hola Mundo"
 
 Cada línea de código es una instrucción interpretada por Python. Estas
 instrucciones forman el programa. Las instrucciones de un programa de 
@@ -256,7 +255,7 @@ Veamos cada línea de código para observar qué está haciendo. Comenzaremos
 en la línea número 1.
 
 ## Comentarios para la programadora
-La primera línea del programa Hola mundo es un comentario.
+La primera línea del programa Hola mundo es un *comentario*:
 
 ***
 <pre>
@@ -298,19 +297,20 @@ Las líneas 2 y 3 del programa Hola mundo son llamadas a `print()`:
 ***
 
 Un valor entre los paréntesis en una llamada a función es un *argumento*. 
-El argumento de la llamada `print()` en la línea 2 es `Hola mundo`, y 
-el argumento de la llamada `print()` en la línea 3 es `¿Cuál es su nombre?`.
+El argumento de la llamada `print()` en la línea 2 es `'Hola mundo'`, y 
+el argumento de la llamada `print()` en la línea 3 es `'¿Cuál es su nombre?'`.
 A esto se le llama *pasar* el argumento a la función.
 
-## La función *input()*
+## La función `input()`
 
 La línea 4 es una declaración de asignación de una variable, *myName*,
 y una función de llamada, `input()`:
 
 ***
 <pre>
-4. myName = input()
+4. miNombre = input()
 </pre>
+
 ***
 
 Cuando `input()` es llamada, el programa espera para que la usuaria
@@ -323,12 +323,12 @@ El valor al que evalúa la llamada a función se llama valor de retorno.
 (De hecho, "el valor al que evalúa la llamada a función retorna" significa lo 
 mismo que "el valor al que evalúa la llamada a función".) En este caso, el 
 valor de retorno de la función `input()` es la cadena de caracteres que la usuaria
-escribió: su nombre. Si la usuaria ingresa *Albert*, la llamada a función `input()` 
-evalúa el la cadena de caracteres 'Albert'. La evaluación se ve como esto:
+escribió: su nombre. Si la usuaria ingresa *Alberto*, la llamada a función `input()` 
+evalúa el la cadena de caracteres 'Alberto'. La evaluación se ve como esto:
 
-![Evaluación de funcion](https://inventwithpython.com/invent4thed/images/00049.jpeg "Evaluacion de funcion")
+![Evaluación de función](images/00049.png "Evaluación de función")
 
-Así es cómo el valor de la cadena de caracteres es almacenado en la variable myName.
+Así es cómo el valor de la cadena de caracteres es almacenado en la variable miNombre.
 
 ## Expresiones en llamadas a funciones
 
@@ -337,22 +337,23 @@ la función `print()`:
 
 ***
 <pre>
-5. print('Gusto en conocerle, ' + myName)
+5. print('Es un placer conocerte, ' + miNombre)
 </pre>
+
 ***
 
-La expresión *'Gusto en conocerle', + myName* está rodeada por los 
+La expresión *'Gusto en conocerle', + miNombre está rodeada por los 
 paréntesis del `print()`. Porque los argumentos son valores únicos, Python
 evaluará primero esta expresión y luego pasará ese valor como el argumento.
-Si myName contiene el valor 'Albert', la evaluación se verá así:
+Si miNombre contiene el valor 'Alberto', la evaluación se verá así:
 
-![Evaluación de Albert](https://inventwithpython.com/invent4thed/images/00051.jpeg "Evaluacion de Albert")
+![Evaluación de Alberto](images/00051.png "Evaluación de Alberto")
 Así es como el programa saluda a la usuaria por su nombre.
 
 ##El final del programa
 Una vez que el programa ejecuta la última línea, *termina* o *sale*. Esto
 significa que el programa para de ejecutarse. Python olvida todos los
-valores de las variables, incluida la cadena de caracteres almacenada en *myName*.
+valores de las variables, incluida la cadena de caracteres almacenada en *miNombre*.
 Si ejecuta el programa otra vez y escribe un nombre diferente, el
 programa pensará que es su nombre:
 
@@ -361,8 +362,9 @@ programa pensará que es su nombre:
 Hola mundo
 ¿Cuál es su nombre?
 Carolyn
-Gusto en conocerle, Carolyn
+Es un placer conocerte, Carolyn
 </pre>
+
 ***
 
 Recuerde, la computadora hace exactamente lo que la programó para hacer.
@@ -375,16 +377,16 @@ La computadora lo tratará de la misma manera:
 Hola mundo
 ¿Cuál es su nombre?
 <b>caca</b>
-Gusto en conocerle, caca.
+Es un placer conocerte, caca.
 </pre>
+
 ***
 
 ## Nombrar variables
 
-<p align="justify">
 Dar a las variables un nombre descriptivo hace más fácil entender lo que
 el programa hace. Usted podría haber llamado la variable *myName* como
-*abrahamLincoln* o *nAmE*, y Python habría ejecutado el programa de la
+*abrahamLincoln* o *nOmBrE*, y Python habría ejecutado el programa de la
 misma manera. Pero estos nombres realmente no nos dicen mucho acerca de
 qué contiene el valor de la variable. Como se discutió en el Capítulo 1,
 si usted se estuviera mudando a una nueva casa y etiqueta todas las cajas
@@ -393,31 +395,23 @@ interactiva que se muestran en este libro usan nombres como *spam*, *eggs*,
 y *bacon* porque los nombres de las variables en estos ejemplos no
 importan. De todas maneras, los programas de este libro utilizan nombres
 descriptivos, y así deben estar en sus programas.
-</p>
 
-<p align="justify">
 Los nombres de las variables son sensibles a mayúsculas o minúsculas, 
 esto significa que si alguna letra del nombre de las variables está en
 minúscula o mayúscula, lo tomará como si fuera una variable distinta.
 Es esta manera *spam*, *SPAM*, *Spam* y *sPAM* son cuatro variables 
 diferentes en Python. Cada una contiene sus diferentes valores separados
-unos de otros. Es una mala idea tener valiables que combinen
+unos de otros. Es una mala idea tener variables que combinen
 desordenadamente las mayúsculas con las minúsculas en su programa. En lugar
 de eso use nombres descriptivos para sus variables.
-</p>
 
-<p align="justify">
 Los nombres de las variables usualmente se escriben en minúscula. Si hay
 más de una palabra en el nombre de la variable, es una buena idea escribir
-en mayúscula la primera letra de cada palabra despues de la primera. Por
-ejemplo, el nombre de la variable *whatIHadForBreakfastThisMorning* es
-más fácil de entender cuando se lee que *whatihadforbreakfastthismorning*.
-Las programadoras también prefieren usar nombres de variables más cortos
-para hacer el código más fácil de entender: *breakfast* or 
-*foodThisMorning* es más legible que *whatIHadForBreakfastThisMorning*.
-Estas son *convenciones* opcionales, pero estandariza la forma de 
-programar en Python.
-</p>
+en mayúscula la primera letra de cada palabra después de la primera. Por
+ejemplo, el nombre de la variable *loQueHeDesayunadoEstaMañana* es
+más fácil de entender cuando se lee que *loquehedesayunadoestamañana*. La utilización de mayúsculas y minúsculas de esta manera se denomina *Joroba de camello*, en inglés *Camel Case*, (porque se parece a las jorobas en la espalda de un camello), y hace que su código sea más legible.  Las programadoras también prefieren usar nombres de variables más cortos para hacer el código más fácil de entender: *desayuno* o
+*comidaEstaMañana* es más legible que *loQueHeDesayunadoEstaMañana*. Estas son *convenciones* opcionales, pero estandariza la forma de programar en Python.
+
 
 ## Resumen
 
