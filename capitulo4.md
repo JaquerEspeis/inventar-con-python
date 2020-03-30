@@ -4,12 +4,11 @@
 
 Este capítulo le cuenta algunos chistes a las personas usuarias y les demuestra algunas maneras avanzadas de usar cadenas de caracteres usando la función `print()`. La mayoría de los juegos en este libro tendrán un texto simple de entrada y salida. La entrada es escrita por la usuaria usando el teclado y la salida es el texto mostrado en la pantalla.
 
-
 ***
 Temas cubiertos en este capítulo:
 * Caracteres de escape
 * Uso de comillas simples y dobles para manejo de cadenas de caracteres
-* Uso del argumento palabra clave «end» de la función `print()` para evitar nuevas lineas
+* Uso del argumento de palabra clave «end» en la función `print()` para evitar nuevas lineas
 ***
 
 Ya aprendió cómo mostrar una salida de texto simple usando la función `print()`. Ahora vamos a profundizar y veremos cómo las cadenas de caracteres y `print()` funcionan en Python.
@@ -29,21 +28,19 @@ No sé... ¿en qué se parecen?
 En que el bombero y el barco tienen casco.
 ¿Y la familia? -Bien, gracias.
 </pre>
-
 ***
 
 ## Código fuente del programa chistes
 
-Abra una nueva ventana de edición de archivos haciendo clic en **Archivo->Nueva Ventana**. En la nueva ventana que aparece, agregue el código fuente y guardelo como chistes.py. Luego corra el programa presionando F5.
+Abra una nueva ventana de edición de archivos haciendo clic en **Archivo->Nueva Ventana**. En la nueva ventana que aparece, agregue el código fuente y guárdelo como *chistes.py*. Luego corra el programa presionando F5.
 
 ![Python 3](https://inventwithpython.com/invent4thed/images/00060.jpeg "Python3")
 
 Si obtiene errores después de escribir este código, compárelo con el código del libro con la herramienta diff en línea en http://invpy.com/es/diff/chistes.
 
-***
-<pre>
-<b>chistes.py</b>
+*chistes.py*
 
+~~~Python
  1. print('¿Qué sale de la cruza entre un mono y un pato?')
  2. input()
  3. print('¡Un monopatín!')
@@ -60,21 +57,17 @@ Si obtiene errores después de escribir este código, compárelo con el código 
 14. input()
 15. print('¿Y la familia?', end='')
 16. print(' -Bien, gracias.')
-</pre>
-
-***
+~~~
 
 ## ¿Cómo funciona el código?
 Empecemos por ver las primeras cuatro líneas de código:
-***
-<pre>
+
+~~~Python
  1. print('¿Qué sale de la cruza entre un mono y un pato?')
  2. input()
  3. print('¡Un monopatín!')
  4. print()
-</pre>
-
-***
+~~~
 
 Las líneas de la 1 a la 3 usan las llamadas a la función `print()` para preguntar y responder al primer chiste. No se quiere que la usuaria lea de inmediato la respuesta del chiste, por lo que se usa una llamada a la función `input()` después del primer `print()`. De esta manera la usuaria leerá la primera línea del chiste, presionará INTRO, y luego leerá la respuesta.
 
@@ -85,44 +78,36 @@ La última llamada a la función `print()` no tiene argumento de cadena de carac
 ## Caracteres de escape
 
 Las líneas de la 5 a la 8 imprimen la pregunta y la respuesta del siguiente chiste:
-***
-<pre>
+
+~~~Python
  5. print('¿Porqué vuelan los pájaros pa\'l sur?')
  6. input()
  7. print('¡Porque caminando tardarían muchísimo!')
  8. print()
-</pre>
-
-***
+~~~
 
 En la línea 5 hay una barra invertida justo antes de la comilla simple (note que `\` es una barra invertida y que `/` es barra inclinada). Esta barra invertida indica que la letra que se encuentra justo después es un «carácter de escape» . Un *carácter de escape* le permite imprimir caracteres especiales que son difíciles o imposibles de ingresar al código fuente, como la comilla simple en una cadena de caracteres que empieza y termina con comillas simples.
-En este caso, si no incluimos la barra invertida, la comilla simple en `pa\'l` se hubiera interpretado como el final de la cadena de caracteres. Pero esta comilla necesita ser parte de la cadena de caracteres. La comilla simple con escape le indica a Python que debe incluir la comilla simple en la cadena de caracteres.
+En este caso, si no incluimos la barra invertida, la comilla simple en `pa\'l` se hubiera interpretado como el final de la cadena de caracteres. Pero esta comilla necesita *ser parte* de la cadena de caracteres. La comilla simple con escape le indica a Python que debe incluir la comilla simple en la cadena de caracteres.
 
 Ahora, ¿cómo se podría mostrar una barra invertida? Si se ejecuta la siguiente línea de código desde una consola, no funcionaría:
 
-Vaya de su programa chistes.py hacia la consola interactiva y escriba esta sentencia `print()`:
+Vaya de su programa *chistes.py* hacia la consola interactiva y escriba la sentencia `print()`:
 
-***
-<pre>
-<b>>>> print('Ellas se fueron volando en un helicóptero verde\turquesa.')</b>
+~~~Python
+>>> print('Ellas se fueron volando en un helicóptero verde\turquesa.')
 Ellas se fueron volando en un helicóptero verde    urquesa.
-</pre>
-
-***
+~~~
 
 Esta instrucción no imprimió la barra invertida porque la `t` en `turquesa` fue interpretada como un carácter de escape debido a que estaba después de una barra invertida. El carácter de escape `\t` simula la presión de la tecla TAB del teclado.
 
 Esta línea le dará la salida correcta:
 
-***
-<pre>
-<b>>>> print('Ella se fueron volando en un helicóptero verde\\turquesa.')</b>
+~~~Python
+>>> print('Ella se fueron volando en un helicóptero verde\\turquesa.')
 Ellas se fueron volando en un helicóptero verde\turquesa.
-</pre>
+~~~
 
-***
-
-De esta manera el `\\` es un carácter de barra invertida y no hay un `\t` que intepretar como un TAB.
+De esta manera el `\\` es un carácter de barra invertida y no hay un `\t` que interpretar como un TAB.
 
 
 La tabla 4-1 es una lista de algunos caracteres de escape en Python, incluyendo `\n`, que es el carácter de escape de nueva línea que ha usado antes.
@@ -141,60 +126,49 @@ Existen más caracteres de escape en Python, pero estos son los caracteres que m
 
 ## Comillas Simples y Dobles
 Mientras todavía estamos en una consola interactiva, veamos un poco más a fondo a las comillas. Las cadenas de caracteres no siempre tienen que estar entre comillas simples en Python. También se pueden poner entre comillas dobles. Estas dos líneas imprimen la misma cosa:
-***
-<pre>
-<b>>>> print('Hola Mundo')</b>
-Hola Mundo
-<b>>>> print("Hola Mundo")</b>
-Hola Mundo
-</pre>
 
-***
+~~~Python
+>>> print('Hola Mundo')
+Hola Mundo
+>>> print("Hola Mundo")
+Hola Mundo
+~~~
 
 Pero no se pueden mezclar las comillas simples con las dobles. Esta siguiente línea va le dará un error porque usa ambas comillas al mismo tiempo:
 
-***
-<pre>
-<b>>>> print('Hola mundo")</b>
+~~~Python
+>>> print('Hola mundo")
 SyntaxError: EOL while scanning single-quoted string
-</pre>
-
-***
+~~~
 
 Personalmente prefiero usar comillas simples para no tener que mantener presionada la tecla SHIFT para escribirlas. Son más fáciles de escribir y a Python no le importa cuál de las dos usemos.
 
 También note que al igual que necesita la barra invertida `\'`, para tener una comilla simple en una cadena de caracteres encerrada entre comillas simples, también va a necesitar la barra invertida `\"` para poder tener comillas dobles en una cadena de caracteres encerrada por comillas dobles. Veamos este ejemplo:
 
-***
-<pre>
-<b>>>> print('Le pedí prestado el carro a Pedro pa\'ir al pueblo. Él dijo, "Seguro."')</b>
+~~~Python
+>>> print('Le pedí prestado el carro a Pedro pa\'ir al pueblo. Él dijo, "Seguro."')
 Le pedí prestado el carro a Pedro pa'ir al pueblo. Él dijo, "Seguro."
-</pre>
-
-***
+~~~
 
 Se usan comillas simples para encerrar a una cadena de caracteres, por lo que es necesario agregar una barra invertida antes de la comilla simple en `pa'ir`. Pero las comillas dobles en `"Seguro"` no necesitan una barra invertida. El intérprete de Python tiene inteligencia suficiente para saber que si una cadena de caracteres comienza con un tipo de comillas, el otro tipo de comillas no significa que la cadena de caracteres está terminada.
 
 Ahora veamos este otro ejemplo:
 
-***
-<pre>
-<b>>>> print("Ella dijo, \"No puedo creer que lo dejaste llevarse el carro pa'l pueblo\"")</b>
+~~~Python
+>>> print("Ella dijo, \"No puedo creer que lo dejaste llevarse el carro pa'l pueblo\"")
 Ella dijo, "No puedo creer que lo dejaste llevarse el carro pa'l pueblo"
-</pre>
+~~~
 
 La cadena de caracteres está encerrada entre comillas dobles, por lo que es necesario agregar barras invertidas para toda las comillas dobles que se encuentren dentro de la cadena de caracteres. No es necesario escapar la comilla simple usada en `pa'l.
 
 Para resumir, en las cadenas de caracteres de comilla simple, no es necesario escapar las comillas dobles pero es necesario escapar las comillas simples, y en las cadenas de caracteres de comilla doble, no es necesario escapar las comillas simples pero sí las comillas dobles.
 
-***
 
-## El parámetro de palabra clave `end` de la función print()
+## El argumento de palabra clave `end` en la función print()
 
-Ahora regresemos al archivo chistes.py y veamos las líneas de la 9 a las 6:
+Ahora regresemos al archivo *chistes.py* y veamos las líneas de la 9 a las 6:
 
-***
-<pre>
+~~~Python
  9. print('¿En qué se parecen una familia, un bombero y un barco?')
 10. input()
 11. print("No sé... ¿en qué se parecen?")
@@ -203,26 +177,21 @@ Ahora regresemos al archivo chistes.py y veamos las líneas de la 9 a las 6:
 14. input()
 15. print('¿Y la familia?', end='')
 16. print(' -Bien, gracias.')
-</pre>
+~~~
 
-***
+¿Notó que el segundo parámetro en la función `print()` de la línea 15?. Normalmente, `print()` añade una nueva línea al final de la cadena de caracteres que imprime. Por esta razón, una función `print()` en blanco tan solo imprimirá una nueva línea. Pero la función `print()` tiene la opción de un segundo parámetro: `end` (fin en inglés).
 
-¿Notó del segundo parámetro en la función `print()` de la línea 15?. Normalmente, `print()` añade una nueva línea al final de la cadena de caracteres que imprime. Por esta razón, una función `print()` en blanco tan solo imprimirá una nueva línea. Pero la función `print()` tiene la opción de un segundo parámetro (que tiene nombre `end` (fin en inglés)).
-
-Recuerde que un argumento es un valor que se le pasa a una llamada a función. La cadena en blanco que se le pasa a la función `print()` se llama *argumento de palabra clave*. El `end` que se encuentra en el `end=''` se llama *parámetro de palabra clave*. Para pasar un argumento de palabra clave a este parámetro de palabra clave, debe escribir la palabra `end=` al antes de este.
+Recuerde que un argumento es un valor que se le pasa a una llamada a función. La cadena en blanco que se le pasa a la función `print()` se llama *argumento de palabra clave*. El `end` que se encuentra en el `end=''` se llama *parámetro de palabra clave*. Para pasar un argumento de palabra clave a este parámetro de palabra clave, debe escribir la palabra `end=` antes de este.
 Cuando ejecutamos esta sección de código, la salida sería:
 
-***
-<pre>
+~~~Python
 ¿En qué se parecen una familia, un bombero y un barco?
 No sé... ¿en qué se parecen?
 En que el bombero y el barco tienen casco.
 ¿Y la familia? -Bien, gracias.
-</pre>
+~~~
 
-***
-
-Pasando una cadena de caracteres en blanco usando `end`, la función `print()` no añadirá una nueva linea al final de la cadena de caracteres, en lugar de esto añadirá una cadena de caracteres en blanco. Por esta razón ' `-Bien, gracias.'` aparece junto a la línea anterior, en lugar de en una nueva línea. No hubo una nueva línea después de que fue imprimida la cedena de caracteres `'¿Y la familia?'`.
+Pasando una cadena de caracteres en blanco usando `end`, la función `print()` no añadirá una nueva linea al final de la cadena de caracteres, en lugar de esto añadirá una cadena de caracteres en blanco. Por esta razón ' `-Bien, gracias.'` aparece junto a la línea anterior, en lugar de en una nueva línea. No hubo una nueva línea después de que fue imprimida la cadena de caracteres `'¿Y la familia?'`.
 
 ## Resumen
 
