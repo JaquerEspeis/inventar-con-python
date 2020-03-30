@@ -28,7 +28,7 @@ problema de matemática en la consola interactiva--note que responde con el núm
 
 ![Escribiendo 2+2 en la consola interactiva](https://inventwithpython.com/invent4thed/images/00022.jpeg "Escribiendo 2+2 en la consola interactiva")
 
-Figura 1-1: Escribiendo 2+2 en la consola interactiva
+*Figura 1-1: Escribiendo 2+2 en la consola interactiva*
 
 Este problema de matemática es una simple instrucción de programación. El signo
 de más (`+`) le indica a la computadora que sume los números `2` y `2`.
@@ -67,9 +67,9 @@ conectados por operadores (los signos matemáticos) que producen un nuevo valor
 que el código puede usar. Las computadoras pueden resolver millones de
 expresiones en segundos.
 
-![Una expresión está formada por valores y operadores](https://inventwithpython.com/invent4thed/images/00022.jpeg "Una expresión está formada por valores y operadores")
+![Una expresión está formada por valores y operadores](https://inventwithpython.com/invent4thed/images/00025.jpeg "Una expresión está formada por valores y operadores")
 
-Figura 1-2: Una expresión está formada por valores y operadores
+*Figura 1-2: Una expresión está formada por valores y operadores*
 
 Intente escribir algunas de estas expresiones en la consola interactiva,
 presione `ENTER` después de cada una:
@@ -85,6 +85,7 @@ presione `ENTER` después de cada una:
 >>> <b>2  +        2</b>
 4
 </pre>
+
 ***
 
 Estas expresiones todas parecen ecuaciones regulares de matemática, pero note
@@ -108,7 +109,7 @@ como cuando usted hace matemáticas. Hay sólo unas pocas reglas:
 * Multiplicación y división se hacen antes de suma y resta.
 * La evaluación se realiza de izquierda a derecha.
 
-La expresión *1 + 2 * 3 + 4* se evalúa a `11`, no a `13`, porque `2 * 3` se
+La expresión `1 + 2 * 3 + 4` se evalúa a `11`, no a `13`, porque `2 * 3` se
 evalúa primero. Si la expresión fuera `(1 + 2) * (3 + 4)` se evaluaría a `21`,
 porque los `(1 + 2)` y `(3 + 4)` dentro de paréntesis se evalúan antes que la
 multiplicación.
@@ -128,7 +129,6 @@ consola interactiva. La consola interactiva solo le muestra el resultado:
 >>> <b>8 * 3 / 2 + 2 + 7 - 9</b>
 12.0
 </pre>
-
 Note que las expresiones con el operador de división `/` siempre evalúan a un
 flotante; por ejemplo, `24 / 2` evalúa a `12.0`. Las operaciones matemáticas
 con aunque sea un valor flotante también evalúan a valores flotantes, entonces
@@ -175,13 +175,12 @@ Por ejemplo, escriba lo siguiente en la consola interactiva:
 >>> <b>spam = 15</b>
 >>>
 </pre>
-
 La caja de la variable `spam` ahora almacena el valor `15`, como se muestra en
 la Figura 1-3.
 
-![Metáfora de que una variable es una caja](https://inventwithpython.com/invent4thed/images/00022.jpeg "Metáfora de que una variable es una caja")
+![Metáfora de que una variable es una caja](https://inventwithpython.com/invent4thed/images/00029.jpeg "Metáfora de que una variable es una caja")
 
-Figura 1-3: Las variables son como cajas que pueden almacenar valores.
+*Figura 1-3: Las variables son como cajas que pueden almacenar valores.*
 
 Cuando presiona ENTER, no verá nada de respuesta. En Python, se sabe que la
 instrucción fue exitosa si no aparece un mensaje de error. El «prompt» `>>>`
@@ -275,7 +274,7 @@ adentro, como se muestra en la Figura 1-4.
 
 ![Metáfora sobrescribir un valor en la caja](https://inventwithpython.com/invent4thed/images/00031.jpeg "Metáfora de sobrescribir un valor en la caja")
 
-Figura 1-4: El valor 15 en spam se sobrescribe con el valor 3.
+*Figura 1-4: El valor 15 en spam se sobrescribe con el valor 3.*
 
 Incluso puede usar el valor de la variable `spam` para asignar un nuevo valor a
 `spam`:
@@ -305,7 +304,7 @@ la consola interactiva:
 </pre>
 ***
 
-En este ejemplo, se asigna el valor de `15` en la primer sentencia, se suma `5`
+En este ejemplo, se asigna el valor de `15` en la primer sentencia. En la segunda sentencia, se suma `5`
 al valor de `spam` y se asigna a `spam` el nuevo valor `spam + 5`, que evalúa a
 `20`. Cuando hace esto tres veces, `spam` evalúa a `30`.
 
@@ -326,7 +325,7 @@ en la Figura 1-5.
 
 ![Cajas de las variables eggs y bacon](https://inventwithpython.com/invent4thed/images/00033.jpeg "Cajas de las variables eggs y bacon")
 
-Figura 1-5: Cada una de las variables eggs y bacon almacenan variables.
+*Figura 1-5: Cada una de las variables eggs y bacon almacenan variables.*
 
 Escriba `spam = bacon + eggs` en la consola interactiva, y luego revise el
 nuevo valor de `spam`.
