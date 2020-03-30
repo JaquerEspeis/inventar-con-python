@@ -5,7 +5,7 @@
 En este capítulo va a hacer un juego de Adivine el número. La computadora
 pensará un número secreto entre 1 y 20 y le pedirá a la usuaria que lo adivine.
 Después de cada intento, la computadora le dirá a la usuaria si el número es
-muy alto o muy bajo. La usuaria gana si puede adivinar el número en tres seis
+muy alto o muy bajo. La usuaria gana si puede adivinar el número en tres de seis
 intentos.
 
 Este es un buen juego para escribir en código porque cubre muchos conceptos de
@@ -21,7 +21,7 @@ Temas cubiertos en este capítulo:
 * La función `randint()`
 * Sentencias `for`
 * Bloques
-* Las funciones `str()`, `int()` y `float()
+* Las funciones `str()`, `int()` y `float()`
 * Booleanos
 * Operadores de comparación
 * Condiciones
@@ -32,23 +32,23 @@ Temas cubiertos en este capítulo:
 
 ## Ejecución de ejemplo de Adivine el número
 
-Aquí está cómo se ve para la jugadora cuando se ejecuta el juego de Adivine el
+Aquí está cómo se ve para la jugadora cuando se ejecuta el juego de Adivine el 
 número. Los valores que ingresa la jugadora están marcados en negrita.
 
 ***
 <pre>
-¡Hola! ¿Cuál es su nombre?
+¡Hola! ¿Cómo te llamas?
 <b>Alberto</b>
-Bueno Alberto, estoy pensando un número entre 1 y 20.
-Trate de adivinarlo.
+Bueno, Alberto, estoy pensando en un número entre 1 y 20.
+Intenta adivinar.
 <b>10</b>
-El valor es muy alto.
-Trate de adivinarlo.
-<b>20</b>
-El valor es muy bajo.
-Trate de adivinarlo.
+Tu estimación es muy alta.
+Intenta adivinar.
+<b>2</b>
+Tu estimación es muy baja.
+Intenta adivinar.
 <b>4</b>
-¡Buen trabajo, Alberto! ¡Adivinó mi número en 3 intentos!
+¡Buen trabajo, Alberto! ¡Has adivinado mi número en 3 intentos!
 </pre>
 ***
 
@@ -56,7 +56,7 @@ Trate de adivinarlo.
 
 Abra una nueva ventana en el editor de archivos haciendo clic en
 **Archivo > Nueva ventana**. En la ventana en blanco que aparece, escriba el
-código fuente y guárdelo como *guess.py*. Luego ejecute el programa presionando
+código fuente y guárdelo como *adivinaElNúmero.py*. Luego ejecute el programa presionando
 F5.
 
 ![Pingüino recordando usar Python 3](https://inventwithpython.com/invent4thed/images/00020.jpeg "Pingüino recordando usar Python 3")
@@ -69,55 +69,55 @@ Si obtiene errores después de escribir este código, compare el código que
 escribió con el código del libro en la herramienta de diff en línea en
 [https://www.nostarch.com/inventwithpython#diff](https://www.nostarch.com/inventwithpython#diff).
 
-*guess.py*
-***
-<pre>
- 1. # This is a Guess the Number game.
+*adivinaElNúmero.py*
+
+---
+
+```Python
+ 1. # Este es el juego de adivinar el número.
  2. import random
  3.
- 4. guessesTaken = 0
+ 4. intentosRealizados = 0
  5.
- 6. print('¡Hola! ¿Cuál es su nombre?')
- 7. myName = input()
+ 6. print('¡Hola! ¿Cómo te llamas?')
+ 7. miNombre = input()
  8.
- 9. number = random.randint(1, 20)
-10. print('Bueno, ' + myName + ', estoy pensando un número entre 1 y 20.')
+ 9. número = random.randint(1, 20)
+10. print('Bueno, ' + miNombre + ', estoy pensando en un número entre 1 y 20.')
 11.
-12. for guessesTaken in range(6):
-13.     print('Trate de adivinarlo.') # Cuatro espacios al frente de «print»
-14.     guess = input()
-15.     guess = int(guess)
+12. for intentosRealizados in range(6):
+13.     print('Intenta adivinar.') # Cuatro espacios al frente de «print»
+14.     estimación = input()
+15.     estimación = int(estimación)
 16.
-17.     if guess < number:
-18.         print('El valor es muy bajo.') # Ocho espacios al frente de «print»
+17.     if estimación < número:
+18.         print('Tu estimación es muy baja.') # Ocho espacios al frente de «print»
 19.
-20.     if guess > number:
-21.         print('El valor es muy alto.')
+20.     if estimación > número:
+21.         print('Tu estimación es muy alta.')
 22.
-23.     if guess == number:
+23.     if estimación == número:
 24.         break
 25.
-26. if guess == number:
-27.     guessesTaken = str(guessesTaken + 1)
-28.     print('¡Buen trabajo, ' + myName + '! ¡Adivinó mi número en ' +
-          guessesTaken + ' intentos!')
+26. if estimación == número:
+27.     intentosRealizados = str(intentosRealizados + 1)        
+28.      print('¡Buen trabajo, ' + miNombre + '! ¡Has adivinado mi número en ' +        
+                intentosRealizados + ' intentos!')
 29.
-30. if guess != number:
-31.     number = str(number)
-32.     print('Nop. El número que estaba pensando era ' + number + '.')
-</pre>
-***
+30. if estimación != número:
+31.     número = str(número)
+32.     print('Pues no. El número que estaba pensando era ' + número + '.')
+```
+---
 
 ## Importando el módulo random
 
 Veamos a las dos primeras líneas de este programa:
 
-***
-<pre>
-1. # This is a Guess the Number game.
-2. import random
-</pre>
-***
+```Python
+ 1. # Este es el juego de adivinar el número.
+ 2. import random
+```
 
 La primera línea es un comentario, que vio en el Capítulo 2. Recuerde que
 Python ignorará todo lo que esté después del carácter `#`. El comentario aquí
@@ -139,27 +139,22 @@ jugadora adivine.
 Ahora que ha importado el módulo `random`, necesitará establecer algunas
 variables que su programa usará más adelante.
 
-La línea 4 crea una nueva variable llamada `guessesTaken` (intentos, en
-español):
+La línea 4 crea una nueva variable llamada `intentosRealizados`:
 
-***
-<pre>
-4. guessesTaken = 0
-</pre>
-***
+```Python
+ 4. intentosRealizados = 0
+```
 
 En esta variable almacenará el número de intentos que la jugadora ha hecho. Ya
 que la jugadora no ha hecho ningún intento en este punto del programa, almacene
 el entero `0` aquí.
 
-***
-<pre>
-6. print('¡Hola! ¿Cuál es su nombre?')
-7. myName = input()
-</pre>
-***
+```Python
+ 6. print('¡Hola! ¿Cómo te llamas?')
+ 7. miNombre = input()
+```
 
-Las líneas 6 y 7 son las mismas que las líneas del programa Hello World en el
+Las líneas 6 y 7 son las mismas que las líneas del programa Hola Mundo en el
 Capítulo 2. Las programadoras por lo general reusan código de otros programas
 para ahorrarse trabajo.
 
@@ -169,7 +164,7 @@ función, este ejecuta ese miniprograma. El código dentro de `print()` muestra
 en la pantalla la cadena de caracteres que le pasó como argumento.
 
 La línea 7 le permite a la jugadora escribir su nombre y lo almacena en la
-variable `myName` (miNombre, en español). Recuerde, la cadena de caracteres
+variable `miNombre`. Recuerde, la cadena de caracteres
 podría no ser realmente el nombre de la jugadora; es sólo cualquier cadena de
 caracteres que la jugadora escriba. Las computadoras son tontas y siguen las
 instrucciones, sin importar qué.
@@ -180,15 +175,12 @@ Ahora que sus otras variables están establecidas, puede usar la función del
 módulo `random` (aleatorio, en español) para establecer el número secreto de la
 computadora:
 
-***
-<pre>
-9. number = random.randint(1, 20)
-</pre>
-***
+```Python
+ 9. número = random.randint(1, 20)
+```
 
 La línea 9 llama a una nueva función llamada `randint()` (por «random integer»,
-entero aleatorio en español) y almacena el valor que devuelve en `number`
-(número, en español). Recuerde que las llamadas a función pueden ser parte de
+entero aleatorio en español) y almacena el valor que devuelve en `número`. Recuerde que las llamadas a función pueden ser parte de
 expresiones porque estas evalúan a un valor.
 
 La función `randint()` es brindada por el módulo `random`, de forma que debe
@@ -198,34 +190,32 @@ que la función `randint()` está en el módulo `random`.
 `randint()` devolverá un entero aleatorio entre dos argumentos enteros que le
 pase (e incluyéndolos). La línea 9 pasa `1` y `20`, separados por comas, entre
 los paréntesis que siguen al nombre de función. El entero aleatorio que
-`randint()` devuelve se almacena en una variable llamada `number`--este es el
+`randint()` devuelve se almacena en una variable llamada `número`--este es el
 número secreto que la jugadora intentará adivinar.
 
 Sólo por un momento, vuelva a la consola interactiva y escriba
 **`import random`** para importar el módulo `random`. Luego, escriba
 **`random.randint(1, 20)`** para ver a qué evalúa la función. Esta devuelve un
 entero entre `1` y `20`. Repita el código de nuevo, y la llamada a la función
-devolverá otro entero. La función `readint()` devuelve un entero aleatorio cada
+devolverá otro entero. La función `randint()` devuelve un entero aleatorio cada
 vez, justo como tirar un dado resultará en un número aleatorio cada vez. Por
 ejemplo, escriba lo siguiente en la consola interactiva. Es probable que el
 resultado que obtendrá cuando llame a la función `randint()` sea diferente
 (¡después de todo es aleatorio!).
 
-***
-<pre>
->>> <b>import random</b>
->>> <b>random.randint(1, 20)</b>
+```Python
+>>> import random
+>>> random.randint(1, 20)
 12
->>> <b>random.randint(1, 20)</b>
+>>> random.randint(1, 20)
 18
->>> <b>random.randint(1, 20)</b>
+>>> random.randint(1, 20)
 3
->>> <b>random.randint(1, 20)</b>
+>>> random.randint(1, 20)
 18
->>> <b>random.randint(1, 20)</b>
+>>> random.randint(1, 20)
 7
-</pre>
-***
+```
 
 También puede intentar diferentes rangos de números cambiando los argumentos.
 Por ejemplo, escriba **`random.randint(1, 4)`** para obtener sólo enteros entre
@@ -234,33 +224,27 @@ Por ejemplo, escriba **`random.randint(1, 4)`** para obtener sólo enteros entre
 
 Escriba este código en la consola interactiva y vea los números que obtiene:
 
-***
-<pre>
->>> <b>random.randint(1, 4)</b>
+```Python
+>>> random.randint(1, 4)
 3
->>> <b>random.randint(1000, 2000)</b>
+>>> random.randint(1000, 2000)
 1294
-</pre>
-***
+```
 
 Puede cambiar el código del juego un poco para hacer que el juego se comporte
 diferente. En nuestro código original, usamos un entero entre `1` y `20`:
 
-***
-<pre>
- 9. number = random.randint(1, 20)
-10. print('Bueno, ' + myName + ', estoy pensando un número entre 1 y 20.')
-</pre>
-***
+```Python
+ 9. número = random.randint(1, 20)
+10. print('Bueno, ' + miNombre + ', estoy pensando en un número entre 1 y 20.')
+```
 
 Pruebe en vez de eso cambiar el rango de enteros a `(1, 100`).
 
-***
-<pre>
- 9. number = random.randint(1, <b>100</b>)
-10. print('Bueno, ' + myName + ', estoy pensando un número entre 1 y <b>100</b>.')
-</pre>
-***
+```Python
+ 9. número = random.randint(1, 100)
+10. print('Bueno, ' + miNombre + ', estoy pensando en un número entre 1 y 100.')
+```
 
 Ahora la computadora pensará un entero entre `1` y `100` en vez de entre `1` y
 `20`. Cambiar la línea 9 cambiará el rango del número aleatorio, pero recuerde
@@ -276,7 +260,9 @@ dado).
 Después de que la computadora asigna un número aleatorio a `number`, le da la
 bienvenida a la jugadora:
 
-10. print('Bueno, ' + myName + ', estoy pensando un número entre 1 y 20.')
+```Python
+10. print('Bueno, ' + miNombre + ', estoy pensando en un número entre 1 y 20.')
+```
 
 En la línea 10, `print()` le da la bienvenida a la jugadora llamándola por su
 nombre y le dice que la computadora está pensando un número aleatorio.
@@ -302,11 +288,9 @@ alrededor de su programa.
 
 La línea 12 es una sentencia `for`, que indica el inicio de un ciclo `for`:
 
-***
-<pre>
-12. for guessesTaken in range(6):
-</pre>
-***
+```Python
+12. for intentosRealizados in range(6):
+```
 
 Los *ciclos* le permiten ejecutar código una y otra vez. La línea 12 repetirá
 el código seis veces. Una sentencia `for` empieza con la palabra clave `for`,
@@ -330,29 +314,28 @@ hay una línea de código con la *misma indentación que antes* de que el bloque
 empezara. También puede haber bloques dentro de otros bloques. La Figura 3-1
 muestra un diagrama de código con los bloques resaltados y numerados.
 
-![Ejemplo de bloques y su indentación](https://inventwithpython.com/invent4thed/images/00053.jpeg "Ejemplo de bloques y su indentación")
+![Ejemplo de bloques y su indentación](images/00053.png "Ejemplo de bloques y su indentación")
 
-Figura 3-1: Un ejemplo de bloques y su indentación. Los puntos grises
-representan espacios.
+*Figura 3-1: Un ejemplo de bloques y su indentación. Los puntos representan espacios.*
 
 En la Figura 3-1, la línea 12 no tiene indentación y no está dentro de ningún
 bloque. La línea 13 tiene una indentación de cuatro espacios. Ya que esta línea
 está indentada más que la línea siguiente, aquí inicia un nuevo bloque. Cada
 línea que sigue a esta con la misma cantidad de indentación o más se considera
-parte del bloque (1). Si Python encuentra otra línea con menos indentación
+parte del bloque **(1)**. Si Python encuentra otra línea con menos indentación
 que la primera línea del bloque, el bloque ha terminado. Las líneas en blanco
 se ignoran.
 
-La línea 18 tiene una indentación de ocho espacios, que empieza el bloque (2).
-Este bloque está *dentro* del bloque (1). Pero la siguiente línea, línea 20,
+La línea 18 tiene una indentación de ocho espacios, que empieza el bloque **(2)**.
+Este bloque está *dentro* del bloque **(1)**. Pero la siguiente línea, línea 20,
 está indentada sólo cuatro espacios. Porque la indentación se ha reducido, se
-sabe que el bloque (2) de la línea 18 ha terminado, y porque la línea 20 tiene
-la misma indentación que la línea 13, se sabe que está en el bloque (1).
+sabe que el bloque **(2)** de la línea 18 ha terminado, y porque la línea 20 tiene
+la misma indentación que la línea 13, se sabe que está en el bloque **(1)**.
 
 La línea 21 aumenta la indentación a ocho espacios de nuevo, entonces otro
-nuevo bloque dentro del bloque ha empezado: el bloque (3). En la línea 23,
-salimos del bloque (3), y en la línea 24 entramos al último bloque dentro de
-un bloque, el bloque (4). Ambos bloques (1) y (4) terminan en la línea 24.
+nuevo bloque dentro del bloque ha empezado: el bloque **(3)**. En la línea 23,
+salimos del bloque **(3)**, y en la línea 24 entramos al último bloque dentro de
+un bloque, el bloque **(4)**. Ambos bloques **(1)** y **(4)** terminan en la línea 24.
 
 ## Haciendo un ciclo con sentencias for
 
@@ -364,16 +347,13 @@ el código de nuevo.
 
 Escriba lo siguiente en la consola interactiva:
 
-***
-<pre>
->>> <b>for i in range(3):
-        print('¡Hola! i tiene un valor de', i)</b>
-
+```Python
+>>> for i in range(3):
+        print('¡Hola! i tiene un valor de', i)
 ¡Hola! i tiene un valor de 0
 ¡Hola! i tiene un valor de 1
 ¡Hola! i tiene un valor de 2
-</pre>
-***
+```
 
 Note que después de escribir `for i in range(3):` y presionar ENTER, la consola
 interactiva no mostró otro «prompt» `>>>` porque está esperando que escriba un
@@ -383,27 +363,25 @@ decirle a la consola interactiva que ya terminó de escribir el bloque de códig
 escriba archivos *.py* en el editor de archivos, no necesita insertar una
 línea en blanco.)
 
-Veamos el ciclo `for` en la línea 12 de *guess.py*:
+Veamos el ciclo `for` en la línea 12 de *adivinaElNúmero.py*:
 
-***
-<pre>
-12. for guessesTaken in range(6):
-13.     print('Trate de adivinarlo.') # Cuatro espacios al frente de «print»
-14.     guess = input()
-15.     guess = int(guess)
+```Python
+12. for intentosRealizados in range(6):
+13.     print('Intenta adivinar.') # Cuatro espacios al frente de «print»
+14.     estimación = input()
+15.     estimación = int(estimación)
 16.
-17.     if guess < number:
-18.         print('El valor es muy bajo.') # Ocho espacios al frente de «print»
+17.     if estimación < número:
+18.         print('Tu estimación es muy baja.') # Ocho espacios al frente de «print»
 19.
-20.     if guess > number:
-21.         print('El valor es muy alto.')
+20.     if estimación > número:
+21.         print('Tu estimación es muy alta.')
 22.
-23.     if guess == number:
+23.     if estimación == número:
 24.         break
 25.
-26. if guess == number:
-</pre>
-***
+26. if estimación == número:
+```
 
 En Adivine el número, el bloque `for` empieza en la sentencia `for` en la línea
 12, y la primera línea después del bloque `for` es la línea 26.
@@ -412,9 +390,9 @@ Una sentencia `for` siempre tiene dos puntos (`:`) después de la condición. La
 sentencias que terminan con dos puntos esperan un nuevo bloque en la línea
 siguiente. Esto se ilustra en la Figura 3-2.
 
-![El flujo de ejecución del ciclo for](https://inventwithpython.com/invent4thed/images/00055.jpeg "El flujo de ejecución del ciclo for")
+![El flujo de ejecución del ciclo for](images/00055.png "El flujo de ejecución del ciclo for")
 
-Figura 3-2: El flujo de ejecución del ciclo for.
+*Figura 3-2: El flujo de ejecución del ciclo for.*
 
 La Figura 3-2 muestra cómo fluye la ejecución. La ejecución entrará al bloque
 `for` en la línea 13 y seguirá hacia abajo. Una vez que el programa alcanza el
@@ -431,45 +409,36 @@ bloque un cierto número de veces».
 Las líneas 13 y 14 le preguntan a la jugadora que adivine cuál es el número
 secreto, y le permite escribir su número:
 
-***
-<pre>
-13.     print('Trate de adivinarlo.') # Cuatro espacios al frente de «print»
-14.     guess = input()
-</pre>
-***
+```Python
+13.    print('Intenta adivinar.') # Cuatro espacios al frente de «print»    
+14.    estimación = input()
+```
 
-El número que la jugadora escribe se almacena en la variable llamada «guess»
-(adivinanza, en español).
+El número que la jugadora escribe se almacena en la variable llamada *estimación*.
 
 ## Convirtiendo valores con las funciones `int()`, `float()` y `str()`
 
 La línea 15 llama a una nueva función llamada `int()`:
 
-***
-<pre>
-15.     guess = int(guess)
-</pre>
-***
+```Python
+15.     estimación = int(estimación)
+```
 
 La función `int()` toma un argumento y devuelve el valor del argumento como
 un entero. Escriba lo siguiente en la consola interactiva para ver cómo la
 función `int()` funciona:
 
-***
-<pre>
->>> <b>int('42')</b>
+```Python
+>>> int('42')
 42
-</pre>
-***
+```
 
 La llamada a `int('42')` devolverá el valor entero `42`.
 
-***
-<pre>
->>> <b>3 + int('2')</b>
+```Python
+>>> 3 + int('2')
 5
-</pre>
-***
+```
 
 La línea `3 + int('2')` muestra una expresión que usa el valor devuelto por
 `int()` como parte de una expresión. Se evalúa al valor entero `5`:
@@ -480,18 +449,17 @@ Aunque puede pasar una cadena de caracteres a `int()`, no se puede pasar
 cualquier cadena de caracteres. Pasar `'cuarenta-y-dos'` a `int()` va a
 resultar en un error:
 
-***
-<pre>
->>> <b>int('cuarenta-y-dos')</b>
+```Python
+>>> int('cuarenta-y-dos')
 Traceback (most recent call last):
   File "<pyshell#5>", line 1, in <module>
     int('cuarenta-y-dos')
 ValueError: invalid literal for int() with base 10: 'cuarenta-y-dos'
-</pre>
-***
+```
 
-La cadena de caracteres que pase a `int()` debe estar formada por números. En
-Adivine el número, obtenemos el número de la jugadora usando la función
+La cadena de caracteres que pase a `int()` debe estar formada por números. 
+
+En Adivine el número, obtenemos el número de la jugadora usando la función
 `input()`. Recuerde que la función `input()` siempre devuelve una *cadena de
 caracteres* del texto que la jugadora escribió. Si la jugadora escribe `5`,
 La función `input()` devolverá la cadena de caracteres con valor `'5'`, no el
@@ -499,60 +467,52 @@ entero con valor `5`. Pero necesitamos comparar el número de la jugadora con
 el entero más tarde, y Python no puede usar los operadores de comparación `<` y
 `>` para comparar una cadena de caracteres y un valor entero:
 
-***
-<pre>
->>> <b>4 < '5'</b>
+```Python
+>>> 4 < '5'
 Traceback (most recent call last):
   File "<pyshell#0>", line 1, in <module>
     4 < '5'
 TypeError: unorderable types: int() < str()
-</pre>
-***
+```
 
 Entonces, necesitamos convertir la cadena de caracteres a un entero:
 
-***
-<pre>
-14.     guess = input()
-15.     guess = int(guess)
-</pre>
-***
+```Python
+14.    estimación = input()
+15.    estimación = int(estimación)
+```
 
-En la línea 14 asignamos a la variable `guess` el valor de la cadena de
+En la línea 14 asignamos a la variable `estimación` el valor de la cadena de
 caracteres de cualquier número que la jugadora escribió. En la línea 15
-sobreescribimos el valor de la cadena de caracteres en `guess` por un valor
-entero devuelto por `int()`. El código `int(guess)` devuelve un nuevo valor
-entero basado en la cadena de caracteres brindada, y `guess =` asigna ese
-nuevo valor a `guess`. Esto le permite más adelante en el programa escribir
-código que compare si `guess` es más grande, más pequeña o igual al número
-secreto en la variable `number`.
+sobreescribimos el valor de la cadena de caracteres en `estimación` por un valor
+entero devuelto por `int()`. El código `int(estimación)` devuelve un nuevo valor
+entero basado en la cadena de caracteres brindada, y `estimación =` asigna ese
+nuevo valor a `estimación`. Esto le permite más adelante en el programa escribir
+código que compare si `estimación` es más grande, más pequeña o igual al número
+secreto en la variable `número`.
 
 Las funciones `float()` y `str()` devolverán de forma similar versiones
 flotantes o de cadenas de caracteres de los argumentos que se les pasan.
 Escriba lo siguiente en la consola interactiva:
 
-***
-<pre>
->>> <b>float('42')</b>
+```Python
+>>> float('42')
 42.0
->>> <b>float(42)</b>
+>>> float(42)
 42.0
-</pre>
-***
+```
 
 Cuando la cadena de caracteres `'42`' o el entero `42` se pasan a `float()`,
 el flotante `42.0` es devuelto.
 
 Ahora trate usando la función `str()`:
 
-***
-<pre>
->>> <b>str(42)</b>
+```Python
+>>> str(42)
 '42'
->>> <b>str(42.0)</b>
+>>> str(42.0)
 '42.0'
-</pre>
-***
+```
 
 Cuando el entero `42` se pasa a `str()`, la cadena de caracteres `'42'` es
 devuelta. Pero cuando el flotante `42.0` se pasa a `str()`, la cadena de
@@ -565,20 +525,17 @@ tipo de datos y devolverlo como un valor de un tipo diferente.
 
 Cada valor en Python pertenece a un tipo de datos. Los tipos de datos que
 hemos introducido hasta ahora son enteros, flotantes, cadenas de caracteres y
-ahora booleanos. El tipo de datos *booleano* tiene sólo dos valores: `True`
-(verdadero, en español) o `False` (falso, en español). Los valores booleanos
-deben ser escritos con una T y F mayúsculas, y el resto del valor del nombre
+ahora booleanos. El tipo de datos *booleano*  tiene sólo dos valores: `True` (verdadero, en español) o `False` (falso, en español). Los valores booleanos
+deben ser escritos con una `T` y `F` mayúsculas, y el resto del valor del nombre
 en minúscula.
 
 Los valores booleanos se pueden almacenar en variables, como cualquier otro
 tipo de datos:
 
-***
-<pre>
+```Python
 >>> <b>spam = True</b>
 >>> <b>eggs = False</b>
-</pre>
-***
+```
 
 En este ejemplo, establece el valor de `spam` a `True` y el valor de `eggs` a
 `False`. Recuerde usar la primera letra en mayúscula.
@@ -593,7 +550,7 @@ Los operadores de comparación comparan dos valores y evalúan a un valor
 booleanos `True` o `False`. La Tabla 3-1 lista todos los operadores de
 comparación.
 
-Tabla 3-1: Operadores de comparación
+**Tabla 3-1:** Operadores de comparación
 
 |Operador | Operación         |
 |---------|-------------------|
@@ -606,86 +563,78 @@ Tabla 3-1: Operadores de comparación
 
 Ya ha leído sobre los operadores matemáticos `+`, `-`, `*` y `/`. Como
 cualquier operador, los operadores de comparación combinan valores para
-formar expresiones como `guessesTaken < 6`
+formar expresiones como `intentosRealizados < 6`
 
 La línea 17 del programa de Adivine el número usa el operador de comparación
 menor que:
 
-***
-<pre>
-17.     if guess < number:
-</pre>
-***
+```Python
+17.     if estimación < número:
+```
 
 Pronto discutiremos sentencias `if` en más detalle; por ahora, veamos la
-expresión que sigue a la palabra clave `if` (la parte de `guess < number`).
-Esta expresión contiene dos valores (los valores en las variables `guess` y
-`number` conectados por un operadora (el `<`, o signo de menor que).
+expresión que sigue a la palabra clave `if` (la parte de `estimación < número`).
+Esta expresión contiene dos valores (los valores en las variables `estimación` y
+`número` conectados por un operadora (el `<`, o signo de menor que).
 
 ### Revisando condiciones `True` o `False`
 
 Una *condición* es una expresión que combina dos valores con un operador de
-comparación (tal como `<` o `>`) y evalúa a un valor booleano. Una condición
+comparación (tal como `<` o `>`) y evalúa a un valor de tipo *Boolean*. Una condición
 es sólo otro nombre para una expresión que evalúa a `True` o `False`. Un lugar
 en el que usamos condiciones es en las sentencias `if`.
 
-Por ejemplo, la condición `guess < number` en la línea 17 pregunta, «¿Es el
-valor almacenado en `guess` menor que el valor almacenado en `number`?» Si es
+Por ejemplo, la condición `estimación < númnero` en la línea 17 pregunta, «¿Es el
+valor almacenado en `estimación` menor que el valor almacenado en `número`?» Si es
 así, entonces la condición evalúa a `True`. Si no, la condición evalúa a
 `False`.
 
-Digamos que `guess` almacena el entero `10` y `number` almacena el entero `16`.
+Digamos que `estimación` almacena el entero `10` y `número` almacena el entero `16`.
 Porque `10` es menor que `16`, esta condición evalúa al valor booleano `True`.
 La evaluación se vería como así:
 
-![Ejecución de la expresión guess < number](https://inventwithpython.com/invent4thed/images/00058.jpeg "Ejecución de la expresión guess < number")
+​	![Ejecución de la expresión estimació < número](images/00058.png "Ejecución de la expresión estimación < número")
 
 ### Experimentando con booleanos, operadores de comparación y condiciones
 
 Escriba las siguientes expresiones en la consola interactiva para ver sus
 resultados booleanos:
 
-***
-<pre>
->>> <b>0 < 6</b>
+```Python
+>>> 0 < 6
 True
->>> <b>6 < 0</b>
+>>> 6 < 0
 False
-</pre>
-***
+```
 
-La condición `0 < 6` devuelve el valor booleano `True` porque el número - es
+La condición `0 < 6` devuelve el valor booleano `True` porque el número `0` es
 menor que el número `6`. Pero, porque `6` no es menor que `0`, la condición
 `6 < 0` evalúa a `False`.
 
 Note que `10 < 10` evalúa a `False` porque el número `10` no es menor que el
 número `10`:
 
-***
-<pre>
->>> <b>10 < 10</b>
+```Python
+>>> 10 < 10
 False
-</pre>
-***
+```
 
-Los valores son los mismos. Si Alice tuviera la misma estatura que Bob, no
-diríamos que Alice es más alta que Bob, ni que Alice es más baja que Bob.
+Los valores son los mismos. Si Alicia tuviera la misma estatura que Berto, no
+diríamos que Alicia es más alta que Berto, ni que Alicia es más baja que Berto.
 Ambas sentencias serían falsas.
 
 Ahora, escriba estas expresiones en la consola interactiva:
 
-***
-<pre>
->>> <b>10 == 10</b>
+```Python
+>>> 10 == 10
 True
->>> <b>10 == 11</b>
+>>> 10 == 11
 False
->>> <b>11 == 10</b>
+>>> 11 == 10
 False
->>> <b>10 != 10</b>
+>>> 10 != 10
 False
-</pre>
-***
+```
 
 En este ejemplo, `10` es igual a `10`, entonces `10 == 10` evalúa a `True`.
 Pero `10` no es igual a `11`, entonces `10 == 11` es `False`. Incluso si
@@ -695,16 +644,14 @@ invertimos el orden, `11` sigue siendo diferente a `10`, entonces `11 == 10` es
 También puede evaluar sentencias de cadenas de caracteres con operadores de
 comparación:
 
-***
-<pre>
->>> <b>'Hola' == 'Hola'</b>
+```Python
+>>> 'Hola' == 'Hola'
 True
->>> <b>'Adiós' != 'Hola'</b>
+>>> 'Adiós' != 'Hola'
 True
->>> <b>'Hola' == 'HOLA'</b>
+>>> 'Hola' == 'HOLA'
 False
-</pre>
-***
+```
 
 `'Hola'` es igual a `'Hola'`, entonces `'Hola' == 'Hola'` es `True`. `'Adiós'`
 no es igual a `'Hola'`, entonces `'Adiós' != 'Hola'` también es `True`.
@@ -715,14 +662,12 @@ son iguales en Python, entonces `'Hola'` no es igual a `'HOLA'`.
 Las cadenas de caracteres y valores enteros nunca van a ser iguales entre sí.
 Por ejemplo, escriba lo siguiente en la consola interactiva:
 
-***
-<pre>
->>> <b>42 == 'Hola'</b>
+```Python
+>>> 42 == 'Hola'
 False
->>> <b>42 != '42'</b>
+>>> 42 != '42'
 True
-</pre>
-***
+```
 
 En el primer ejemplo, `42` es un entero y `'Hola'` es una cadena de caracteres;
 entonces los valores no son iguales y la expresión evalúa a `False`. En el
@@ -745,12 +690,10 @@ y el operador de comparación no igual que, `!=`, tienen dos caracteres.
 
 La línea 17 es una sentencia `if`:
 
-***
-<pre>
-17.     if guess < number:
-18.         print('El valor es muy bajo.') # Ocho espacios al frente de «print»
-</pre>
-***
+```Python
+17.    if estimación < número:
+18.        print('Tu estimación es muy baja.') # Ocho espacios al frente de «print»
+```
 
 El bloque de código que sigue a la sentencia `if` ejecutará si la condición de
 la sentencia `if` evalúa a `True`. Si la condición es `False`, el código en el
@@ -764,12 +707,10 @@ intento fue muy bajo.
 
 La línea 20 revisa si el número de la jugadora es mayor que el número secreto:
 
-***
-<pre>
-20.     if guess > number:
-21.         print('El valor es muy alto.')
-</pre>
-***
+```Python
+20.    if estimación > número:
+21.        print('Tu estimación es muy alta.')
+```
 
 Si esta condición es *True*, entonces la llamada a la función `print()` le dirá
 a la jugadora que su número es muy alto.
@@ -780,12 +721,10 @@ La sentencia `if` en la línea 23 revisa si el número que la jugadora adivinó 
 igual al número secreto. Si lo es, el programa ejecuta la sentencia `break` en
 la línea 24:
 
-***
-<pre>
-23.     if guess == number:
-24.         break
-</pre>
-***
+```Python
+23.    if estimación == número:
+24.        break
+```
 
 Una sentencia `break` le dice a la ejecución que salte inmediatamente afuera
 del bloque `for` a la primera línea después del final del bloque `for`. La
@@ -796,11 +735,9 @@ sentencia `break` se encuentra sólo dentro de ciclos, como en un bloque `for`.
 El bloque `for` termina en la siguiente línea de código sin indentación, que es
 la línea 26:
 
-***
-<pre>
-26. if guess == number:
-</pre>
-***
+```Python
+26. if estimación == número:
+```
 
 La ejecución sale del bloque `for` ya sea porque ha hecho el ciclo seis veces
 (cuando la jugadora se queda sin intentos) o porque se ha ejecutado la
@@ -810,24 +747,22 @@ correcta).
 La línea 26 revisa si la jugadora adivinó de forma correcta. Si es así, la
 ejecución entra en el bloque `if` en la línea 27:
 
-***
-<pre>
-27.     guessesTaken = str(guessesTaken + 1)
-28.     print('¡Buen trabajo, ' + myName + '! ¡Adivinó mi número en ' +
-          guessesTaken + ' intentos!')
-</pre>
-***
+```Python
+27.    intentosRealizados = str(intentosRealizados + 1)
+28.    print('¡Buen trabajo, ' + miNombre + '! ¡Has adivinado mi número en ' +        
+           intentosRealizados + ' intentos!')
+```
 
 Las líneas 27 y 28 ejecutan sólo si la condición el la sentencia `if` en la
 línea 26 es `True` (esto es, si la jugadora adivinó de forma correcta el
 número de la computadora).
 
 La línea 27 llama a la función `str()`, que devuelve la forma de cadena de
-caracteres de `guessesTaken + 1` (ya que la función `range` va de 0 a 5, en
+caracteres de `intentosRealizados + 1` (ya que la función `range` va de 0 a 5, en
 lugar de 1 a 6). La linea 28 concatena cadenas de caracteres para decirle a la
 jugadora que ha ganado y cuántos intentos le tomó. Sólo valores de cadenas de
 caracteres se pueden concatenar a otras cadenas de caracteres. Esta es la razón
-por la que la línea 27 tuvo que cambiar `guessesTaken + 1` a la forma de cadena
+por la que la línea 27 tuvo que cambiar `intentosRealizados + 1` a la forma de cadena
 de caracteres. De otra forma, tratar de concatenar una cadena de caracteres con
 un entero causaría que Python muestre un error.
 
@@ -835,11 +770,9 @@ un entero causaría que Python muestre un error.
 
 Si la jugadora se quedó sin intentos, la ejecución irá a esta línea de código:
 
-***
-<pre>
-30. if guess != number:
-</pre>
-***
+```
+30. if estimación != número:
+```
 
 La línea 30 usa el operador de comparación no igual que `!=` para revisar si el
 último intento de la jugadora no es igual al número secreto. Si esta condición
@@ -848,18 +781,15 @@ evalúa a `True`, la ejecución se mueve dentro del bloque `if` de la línea 31.
 Las líneas 31 y 32 están dentro de un bloque `if`, ejecutando sólo si la
 condición en la línea 30 es `True`:
 
-***
-<pre>
-31.     number = str(number)
-32.     print('Nop. El número que estaba pensando era ' + number + '.')
-</pre>
-***
+```Python
+31.    número = str(número)
+32.    print('Pues no. El número que estaba pensando era ' + número + '.')
+```
 
 En este bloque, el programa le dice a la jugadora cuál era el número secreto.
-Esto requiere concatenar cadenas de caracteres, pero `number` almacena un valor
-entero. La línea 31 sobreescribe `number` con una cadena de caracteres, de
-forma que pueda se concatenado a las cadenas de caracteres `Nop. El número que
-estaba pensando era ` y `.` en la línea 32.
+Esto requiere concatenar cadenas de caracteres, pero `número` almacena un valor
+entero. La línea 31 sobrescribe `número` con una cadena de caracteres, de
+forma que pueda se concatenado a las cadenas de caracteres `'Pues no. El número que estaba pensando era ' ` y `'.'` en la línea 32.
 
 En este punto, la ejecución ha llegado al final del código y el programa
 termina. ¡Felicidades! ¡Acaba de programar su primer juego real!
@@ -868,11 +798,9 @@ Puede ajustar la dificultad del juego cambiando el número de intentos que la
 jugadora tiene. Para darle a la jugadora sólo cuatro intentos, cambie el
 código en la línea 12:
 
-***
-<pre>
-12. for guessesTaken in range(<b>4</b>):
-</pre>
-***
+```Python
+12. for intentosRealizados in range(4):
+```
 
 Al pasar `4` a `range()`, se asegura que el código dentro del ciclo ejecute
 cuatro veces en lugar de seis. Esto hace el juego mucho más difícil. Para hacer
@@ -882,7 +810,7 @@ de la jugadora.
 
 ## Resumen
 
-Programar es sólo la acción de escribir código para programas--esto es, crear
+Programar es sólo la acción de escribir código para programas --esto es, crear
 programas que puedan ser ejecutados por una computadora.
 
 Cuando vea a alguien usando un programa de computadora (por ejemplo, jugando su
