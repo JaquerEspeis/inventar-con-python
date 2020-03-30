@@ -21,6 +21,8 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 * [@kanguarrovi](https://github.com/kanguarrovi)
 * [@tian2992](https://github.com/tian2992)
 * [@dtec83](https://github.com/dtec83)
+* [@CespedX](https://github.com/CespedX)
+* [@JDuartePi](https://github.com/JDuartePi)
 
 ## Contribuír
 
