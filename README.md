@@ -27,7 +27,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 
 La traducción de este libro la estamos haciendo en comunidad. Invitamos a participar a todas las personas que quieran aprender o enseñar sobre Python.
 
-Si saben inglés y español, nos pueden ayudar [revisando las traducciones en progreso](https://github.com/JaquerEspeis/inventar-con-python/pulls). O pueden traducir un nuevo capítulo; para esto [reporten un issue](https://github.com/JaquerEspeis/inventar-con-python/issues/new) con el número del capítulo que quieren traducir, para que no dupliquemos el trabajo. La traducción de la edición anterior puede servir como base para sus traducciones: https://inventwithpython.com/es/
+Si saben inglés y español, nos pueden ayudar [revisando las traducciones en progreso](https://github.com/JaquerEspeis/inventar-con-python/pulls). O pueden traducir un nuevo capítulo; para esto [reporten un issue](https://github.com/JaquerEspeis/inventar-con-python/issues/new) con el número del capítulo que quieren traducir, para que no dupliquemos el trabajo. La traducción de la edición anterior puede servir como base para sus traducciones: https://inventwithpython.com/es/. Por favor tenga presente las [pautas de traducción](https://github.com/JaquerEspeis/inventar-con-python/wiki/Pautas-de-traducci%C3%B3n). 
 
 Para quienes no saben inglés, igual nos pueden ayudar revisando las traducciones ya aceptadas, que van a encontrar en la [Tabla de contenido](#tabla-de-contenido).
 
