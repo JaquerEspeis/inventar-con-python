@@ -11,6 +11,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
  * [2 Escribiendo programas](capitulo2.md)
  * [3 Adivine el número](capitulo3.md)
  * [4 Un programa que cuenta Chistes](capitulo4.md)
+ * [5 Reino de dragones](capitulo5.md)
  * [7 Diseñando el juego ahorcado con diagramas de flujo](capitulo7.md)
 
 ## Mantenedores
