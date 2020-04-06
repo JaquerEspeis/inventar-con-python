@@ -14,6 +14,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
  * [5 Reino de dragones](capitulo5.md)
  * [6 Usando el depurador](capitulo6.md)
  * [7 Diseñando el juego ahorcado con diagramas de flujo](capitulo7.md)
+ * [8 Escribiendo el código de Ahorcado](capitulo8.md)
 
 ## Mantenedores
 
