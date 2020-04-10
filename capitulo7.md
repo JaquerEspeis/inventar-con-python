@@ -25,127 +25,122 @@ Para ganar el juego, la segunda jugadora tiene que adivinar todas las letras de 
 ## Ejecución de ejemplo de Ahorcado
 
 Aquí hay un ejemplo de lo que la jugadora podría ver cuando ella ejecuta el programa de Ahorcado, programa que vamos a escribir en el capítulo 8.
-El texto que la jugadora ingresa está en negrita.
+El texto que la jugadora ingresa está en la línea siguiente al texto "Adivina una letra.".
 
-***
-
-A H O R C A D 0
-<pre>
-   +---+
-     |
-     |
-     |
-    ===
-
-
-Letras falladas:
-_ _ _
-Adivine la letra.
-**a**
+~~~
+A H O R C A D O
+		
   +---+
-      |
-      |
-      |
+      |		
+      |		
+      |		
      ===
-Letras falladas:
-_ a _
-Adivine la letra.
-**o**
+
+Letras incorrectas: 
+_ _ _ _ 
+Adivina una letra.
+o
+		
   +---+
+      |		
+      |		
+      |		
+     ===
+
+Letras incorrectas: 
+_ o _ o 
+Adivina una letra.
+l
+		
+  +---+		
   O   |
-      |
-      |
+      |		
+      |		
      ===
-Letras falladas: o
-_ a _
-Adivine la letra.
-**r**
-  +---+
-  O   |
-  |   |
-      |
+
+Letras incorrectas: l 
+_ o _ o 
+Adivina una letra.
+r
+		
+  +---+		
+  O   |		
+  |   |		
+      |		
      ===
-Letras falladas: or
-_ a _
-Adivine la letra.
-**t**
-  +---+
-  O   |
-  |   |
-      |
+
+Letras incorrectas: l r 
+_ o _ o 
+Adivina una letra.
+o
+Ya has probado esa letra. Elige otra.
+Adivina una letra.
+m
+		
+  +---+		
+  O   |		
+  |   |		
+      |		
      ===
-Letras falladas: or
-_ a t
-Adivine la letra.
-**a**
-Usted ya intentó con esa letra. Intente nuevamente.
-Adivine la letra.
-**c**
-¡Sí! ¡La palabra secreta es «cat» (gato)! ¡Usted ha ganado!
-¿Le gustaría jugar nuevamente (sí o no)?
-**no**
-</pre>
-***
+
+Letras incorrectas: l r 
+m o _ o 
+Adivina una letra.
+n
+¡Sí! ¡La palabra secreta es "mono"! ¡Has ganado!
+¿Quieres jugar de nuevo? (sí o no)
+no
+~~~
 
 ## Arte ASCII
 
 Los gráficos para Ahorcado son caracteres del teclado impresas en la pantalla.
-Este tipo de gráficos son llamados Arte ASCII (pronunciado áski), el cual es un tipo de precursor del emoji.
+Este tipo de gráficos son llamados *Arte ASCII* (pronunciado áski), el cual es un tipo de precursor del emoji.
 Acá está un gato dibujado en arte ASCII:
 
 ![Imagen de un gato dibujado en ASCII](https://inventwithpython.com/invent4thed/images/00080.jpeg)
 
 Los dibujos para el juego de Ahorcado se verán así en arte ASCII:
 
-***
-<pre>
+~~~
  +---+    +---+    +---+    +---+    +---+    +---+    +---+
-
-      |    O   |    O   |    O   |    O   |    O   |    O   |
-      |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
-      |        |        |        |        |   /    |   / \  |
-     ===      ===      ===      ===      ===      ===      ===
-</pre>
-***
+ |    O   |    O   |    O   |    O   |    O   |    O   |
+ |        |    |   |   /|   |   /|\  |   /|\  |   /|\  |
+ |        |        |        |        |   /    |   / \  |
+ ===      ===      ===      ===      ===      ===      ===
+~~~
 
 ## Diseñando un programa con un diagrama de flujo
 
-Este juego es un poco más complicado que los otros que hemos visto hasta el momento.
-Tomemos un momento para pensar cómo poner todo junto.
-Primero usted va a crear un diagrama de flujo (como el que está en la Figura 5-1 en la página 47 para el juego del Dragón) para ayudar a visualizar que hará este programa.
+Este juego es un poco más complicado que los otros que hemos visto hasta el momento. Tomemos un momento para pensar cómo poner todo junto. Primero usted va a crear un diagrama de flujo (como el que está en la Figura 5-1 en la página 47 para el juego del Reino de dragón) para ayudar a visualizar que hará este programa.
 
 Como discutimos en el Capítulo 5, un diagrama de flujo es un diagrama que muestra una serie de pasos como cajas conectadas con flechas.
 Cada caja representa un paso, y cada flecha muestra los posibles pasos.
-Ponga su dedo en la caja de Inicio («Start») del diagrama de flujo y siga el flujo del programa siguiendo las flechas de las las caja hasta que llegue a la caja de Final («End»).
-Usted solo puede moverse de una caja a la otra siguiendo la dirección de la fecha. Usted nunca puede ir hacia atrás, a menos que haya una flecha en dirección hacia atrás, como en la caja del «Player already guessed this letter».
+Ponga su dedo en la caja de «INICIO» del diagrama de flujo y siga el flujo del programa siguiendo las flechas de las las caja hasta que llegue a la caja de «FINAL».
+Usted solo puede moverse de una caja a la otra siguiendo la dirección de la fecha. Usted nunca puede ir hacia atrás, a menos que haya una flecha en dirección hacia atrás, como en la caja del «Jugadora ya adivinó esa letra».
 
 Figura 7-1 es un diagrama de flujo completo para Ahorcado
 
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00081.jpeg)
+![Imagen del diagrama de flujo](images/00081.png)
 
-Claro, usted no tiene que hacer un diagrama de flujo; usted podría solo empezar a escribir código.
-Pero, muy a menudo una vez que inicie a programar, usted pensará en las cosas que deben ser agregadas o cambiadas.
-Usted podría terminar eliminando un montón de su código, lo cual podría ser una pérdida completa de esfuerzo.
-Para evitar esto, es mejor planear cómo el programa va a funcionar antes de empezar escribirlo.
+*Figura 7-1: El diagrama de flujo completo para el juego Ahorcado*
+
+Claro, usted no tiene que hacer un diagrama de flujo; usted podría solo empezar a escribir código. Pero, muy a menudo una vez que inicie a programar, usted pensará en las cosas que deben ser agregadas o cambiadas. Usted podría terminar eliminando un montón de su código, lo cual podría ser una pérdida completa de esfuerzo. Para evitar esto, es mejor planear cómo el programa va a funcionar antes de empezar escribirlo.
 
 ## Creando un Diagrama de flujo
 
-Su diagrama de flujo no necesita verse como el que está en la figura 7-1. Siempre y cuando usted entienda el diagrama de flujo, será muy útil cuando empiece a escribir código.
-Usted puede empezar creando un diagrama de flujo solamente con una caja de INICIO y una caja de FINAL, como es mostrado en la figura 7-2.
+Su diagrama de flujo no necesita verse como el que está en la Figura 7-1. Siempre y cuando usted entienda el diagrama de flujo, será muy útil cuando empiece a escribir código. Usted puede empezar creando un diagrama de flujo solamente con una caja de INICIO y una caja de FINAL, como es mostrado en la Figura 7-2.
 
-Ahora piense en qué pasará cuando usted juegue Ahorcado.
-Primero, la computadora piensa en una palabra secreta.
-Después el jugador adivina las letras.
-Agregue las cajas para estos eventos, como está mostrado en la figura 7-3.
+Ahora piense en qué pasará cuando usted juegue Ahorcado. Primero, la computadora piensa en una palabra secreta. Después el jugador adivina las letras. Agregue las cajas para estos eventos, como está mostrado en la Figura 7-3.
 Las nuevas cajas en cada diagrama de flujo tienen una línea intermitente.
 
-![Imagen de Inicio y Final en el diagrama de flujo](https://inventwithpython.com/invent4thed/images/00083.jpeg)
+![Imagen de Inicio y Final en el diagrama de flujo](images/00083.png)
 
-Figura 7-2: Empiece su diagrama de flujo con una caja de INICIO y una caja de FINAL.
+*Figura 7-2: Empiece su diagrama de flujo con una caja de INICIO y una caja de FINAL.*
 
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00084.jpeg)
+![Imagen del diagrama de flujo](images/00084.png)
 
-Figura 7-3: Dibuje los dos primeros pasos de Ahorcado como cajas con descripciones.
+*Figura 7-3: Dibuje los dos primeros pasos de Ahorcado como cajas con descripciones.*
 
 Pero el juego no termina luego de que la jugadora adivina la letra.
 El programa necesita revisar si la letra está en la palabra secreta.
@@ -155,30 +150,26 @@ El programa necesita revisar si la letra está en la palabra secreta.
 Hay dos posibilidades: La letra está en la palabra o no.
  Usted va a añadir dos cajas nuevas en el diagrama de flujo, una por cada caso.
 Esto crea una rama en el diagrama de flujo, como está mostrado en la figura 7-4.
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00087.jpeg)
+![Imagen del diagrama de flujo](images/00087.png)
 
-Figura 7-4: La rama tiene dos flechas que van hacia cajas separadas.
+*Figura 7-4: La rama tiene dos flechas que van hacia cajas separadas.*
 
-Si la letra no está en la palabra secreta, revise si la jugadora ha adivinado todas las letras y ha ganado el juego.
-Si la letra no está en la palabra secreta, revise si el ahorcado está completo y la jugadora ha perdido.
-Agregue cajas para esos casos también.
+Si la letra no está en la palabra secreta, revise si la jugadora ha adivinado todas las letras y ha ganado el juego. Si la letra no está en la palabra secreta, revise si el ahorcado está completo y la jugadora ha perdido. Agregue cajas para esos casos también.
 
-El diagrama de flujo ahora se ve como en la figura 7-5.
+El diagrama de flujo ahora se ve como en la Figura 7-5.
 
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00089.jpeg)
+![Imagen del diagrama de flujo](images/00089.png)
 
-Figura 7-5 : Después de la rama, los pasos continúan en caminos separados.
+*Figura 7-5 : Después de la rama, los pasos continúan en caminos separados.*
 
-No se necesita una flecha desde la caja «Letter is in secret word» hacia la caja «Player ran out of guesses and loses», porque es imposible para la jugadora perder si acaba de adivinar de forma correcta.
-También es imposible para la jugadora ganar si acaban de adivinar de forma incorrecta, entonces no es necesario dibujar una flecha en esa tampoco.
+No se necesita una flecha desde la caja «Letter is in secret word» hacia la caja «Player ran out of guesses and loses», porque es imposible para la jugadora perder si acaba de adivinar de forma correcta. También es imposible para la jugadora ganar si acaban de adivinar de forma incorrecta, entonces no es necesario dibujar una flecha en esa tampoco.
 
 ## Terminando o reiniciando el juego
 
-Una vez que la jugadora ha ganado o perdido, pregúnteles si desean jugar de nuevo con una nueva palabra secreta. Si la jugadora no quiere jugar de nuevo, el programa termina; de otra forma, el programa continua y piensa en una palabra secreta nueva.
-Esto se muestra en la figura 7-6.
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00091.jpeg)
+Una vez que la jugadora ha ganado o perdido, pregúnteles si desean jugar de nuevo con una nueva palabra secreta. Si la jugadora no quiere jugar de nuevo, el programa termina; de otra forma, el programa continua y piensa en una palabra secreta nueva. Esto se muestra en la figura 7-6.
+![Imagen del diagrama de flujo](images/00091.png)
 
-Figura 7-6: La rama del diagrama de flujo después de preguntarle a la jugadora si quiere jugar nuevamente.
+*Figura 7-6: La rama del diagrama de flujo después de preguntarle a la jugadora si quiere jugar nuevamente.*
 
 ## Adivinando de nuevo
 
@@ -190,13 +181,13 @@ Dibuje dos nuevas flechas como se muestra en el figura 7-7.
 En lugar de contar esta letra de nuevo, permítales adivinar una letra diferente.
 Esta nueva caja se muestra en la Figura 7-8.
 
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00092.jpeg)
+![Imagen del diagrama de flujo](images/00092.png)
 
-Figura 7-7: Las flechas intermitentes muestran que la jugadora puede volver a adivinar.
+*Figura 7-7: Las flechas intermitentes muestran que la jugadora puede volver a adivinar.*
 
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00094.jpeg)
+![Imagen del diagrama de flujo](images/00094.png)
 
-Figura 7-8: Agregue un nuevo paso en caso de que la jugadora adivine una letra que ya haya adivinado.
+*Figura 7-8: Agregue un nuevo paso en caso de que la jugadora adivine una letra que ya haya adivinado.*
 
 Si la jugadora adivina la misma letra dos veces, el diagrama de flujo conduce de nuevo a la caja de «Pregunte a la jugadora por una letra».
 
@@ -209,22 +200,18 @@ Estas pistas visuales les permiten a ellas ver de cerca si están ganando o perd
 Esta información es actualizada cada vez que la jugadora adivina una letra.
 Agregue una caja de «Mostrar el dibujo y el espacio en blanco al jugadora» en el diagrama de flujo entre la caja de «Imagine una palabra secreta» y la caja de «Pregúntele a la jugadora una letra», como se muestra en la Figura 7-9.
 
-![Imagen del diagrama de flujo](https://inventwithpython.com/invent4thed/images/00095.jpeg)
+![Imagen del diagrama de flujo](images/00095.png)
 
-Figura 7-9: Agregue una caja de «Muestre el dibujo y los espacios en blanco a la jugadora» para darle retroalimentación.
+*Figura 7-9: Agregue una caja de «Muestre el dibujo y los espacios en blanco a la jugadora» para darle retroalimentación.*
 
-¡Eso se ve bien! El diagrama de flujo mapea completamente el orden de todo lo que puede pasar en el juego de Ahorcado.
-Cuando usted diseña sus propios juegos, un diagrama de flujo puede ayudarle a recordar todo el código que necesita escribir.
+¡Eso se ve bien! El diagrama de flujo mapea completamente el orden de todo lo que puede pasar en el juego de Ahorcado. Cuando usted diseña sus propios juegos, un diagrama de flujo puede ayudarle a recordar todo el código que necesita escribir.
 
 ## Resumen
 
-Podría verse  que es un montón de trabajo bosquejar el diagrama de flujo sobre el primer programa.
-Después de todo, las personas quieren jugar juegos, ¡no ver diagramas de flujo!
+Podría verse  que es un montón de trabajo bosquejar el diagrama de flujo sobre el primer programa. Después de todo, las personas quieren jugar juegos, ¡no ver diagramas de flujo!
 Pero es mucho más fácil hacer cambios e identificar problemas pensando cómo el programa va a funcionar antes de empezar a escribirlo.
 
 Si usted salta a escribir el código primero, puede descubrir problemas que requieran que cambie código que ya ha sido escrito, perdiendo tiempo y esfuerzo.
-Además, cada vez que cambie su código, usted corre el riesgo de crear nuevos errores al cambiar muy poquito o mucho.
-Es mucho más eficiente conocer qué es lo que quiere construir antes de construirlo.
-Ahora que tenemos un diagrama de flujo, ¡vamos a crear el programa Ahorcado en el capítulo 8!
+Además, cada vez que cambie su código, usted corre el riesgo de crear nuevos errores al cambiar muy poquito o mucho. Es mucho más eficiente conocer qué es lo que quiere construir antes de construirlo. Ahora que tenemos un diagrama de flujo, ¡vamos a crear el programa Ahorcado en el capítulo 8!
 
 [Previo: Capítulo 6: Usando el depurador](capitulo6.md) | [Siguiente: Capítulo 8: Escribiendo el código del ahorcado](capitulo8.md)
