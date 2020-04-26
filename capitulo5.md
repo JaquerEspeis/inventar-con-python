@@ -2,14 +2,14 @@
 
 ![Matraz de Erlenmeyer](https://inventwithpython.com/invent4thed/images/00016.jpeg "Matraz de Erlenmeyer")
 
-El juego que usted creará en este capítulo se llama Reino de Dragones.
-La jugadora decide entre dos cuevas, una de ellas contiene un tesoro y otra un destino desafortunado.
+El juego que usted creará en este capítulo se llama Reino de Dragones. La jugadora decide entre dos cuevas, una de ellas contiene un tesoro y otra un destino desafortunado.
 
 ## ¿Cómo jugar a Reino de dragones?
 
 En este juego, la jugadora está en una tierra llena de dragones. Todos los dragones viven en cuevas junto a sus grandes montones de tesoros encontrados. Algunos dragones son amigables, y compartirán sus tesoros contigo. Otros son codiciosos y hambrientos, y se comerán a cualquiera que entre a su cueva. La jugadora se encuentra frente a dos cuevas, una con un dragón amigable y la otra con un dragón hambriento, pero no sabe cuál dragón está en qué cueva. La jugadora tiene que elegir entre las dos.
 
-***
+---
+
 Temas cubiertos en este capítulo:
 * Diagramas de flujo
 * Creando nuestras propias funciones con la palabra reservada `def`
@@ -21,28 +21,28 @@ Temas cubiertos en este capítulo:
 * Entorno de variables (Global y Local)
 * Parámetros y Argumentos
 * La función `sleep()`
-***
-##Prueba de ejecución de Reino de dragones
 
-Así es como se vería el el juego Reino de dragones al ejecutarlo. Las entradas proporcionadas por la jugadora aparecen en negrita.
+---
+
+## Prueba de ejecución de Reino de dragones
+
+Así es como se vería el el juego Reino de dragones al ejecutarlo. Las entradas proporcionadas por la jugadora aparecen encerradas entre asteriscos.
 
 
-
-***
-Estás en una tierra llena de dragones. Frente a tí
-hay dos cuevas. En una de ellas, el dragón es generoso y amigable
-y compartirá su tesoro contigo. El otro dragón
+~~~Markdown
+Estás en una tierra llena de dragones. Frente a tí 
+hay dos cuevas. En una de ellas, el dragón es generoso 
+y amigable y compartirá su tesoro contigo. El otro dragón 
 es codicioso y está hambriento, y te devorará inmediatamente.
 ¿A qué cueva quieres entrar? (1 ó 2)
-<b>1</b>
+**1**
 Te aproximas a la cueva...
 Es oscura y espeluznante...
 ¡Un gran dragon aparece súbitamente frente a tí! Abre sus fauces y...
 ¡Te engulle de un bocado!
 ¿Quieres jugar de nuevo? (sí or no)
-<b>no</b>
-***
-
+**no**
+~~~
 
 
 ## Diagrama de flujo para Reino de dragones
@@ -56,8 +56,6 @@ Para ver qué pasa en el juego, coloque su dedo sobre el recuadro "Inicio". Lueg
 ![Diagrama de flujo para el juego Reino de dragones](images/00061.png "Diagrama de flujo para el juego Reino de dragones")
 
 *Figura 5-1: Diagrama de flujo para el juego Reino de dragones*
-
-Cuando llegue al recuadro
 
 Cuando llega al recuadro “Comprobar dragón amistoso o hambriento”, puede ir al recuadro “Jugadora gana” o al recuadro “Jugadora pierde”. Esta bifurcación muestra cómo el programa puede hacer diferentes cosas. De cualquier forma, ambos caminos conducirán al recuadro “Ofrece jugar de nuevo”.
 
@@ -314,7 +312,7 @@ La tabla de verdad del operador `or` se muestra en la tabla 5-2.
 | False and True  | True     |
 | False and False | False    |
 
-## ##El operador `not`
+## El operador `not`
 
 En lugar de combinar dos valores, el operador `not` sólo actúa sobre un valor. El operador `not` (no) se evalúa al valor booleano opuesto: Las expresiones  `True` se evaluará a `False` y las expresiones `False` se evaluarán a `True`.
 
@@ -340,7 +338,7 @@ La tabla de verdad del operador `not` se muestra en la tabla 5-3.
 | not True  | False    |
 | not False | True     |
 
-## ##Evaluando operadores booleanos
+## Evaluando operadores booleanos
 
 Miremos otra vez la línea 13 del juego Reino de dragones:
 
@@ -370,7 +368,7 @@ Si la jugadora ha ingresado 1 ó 2, entonces `cueva` será `'1'` o `'2'` (ya que
 
 Pero si la jugadora hubiese escrito `3` o `4` o `HOLA`, esa respuesta habría sido inválida. La condición seguiría siendo `True` y entrando al bloque `while` para preguntar de nuevo a la jugadora. El programa simplemente continúa preguntando hasta que la jugadora responda 1 o 2. Esto garantiza que cuando la ejecución continúe avanzando la variable `cueva` contendrá una respuesta válida.
 
-##Retorno de valores
+## Retorno de valores
 
 La línea 17 tiene algo nuevo llamado una sentencia de `return` (retorno).
 
@@ -430,7 +428,7 @@ Al ser ejecutado, este código mostrará las siguientes salidas::
 
 Dónde se crea una variable determina en qué entorno está esta. Mantenga esto presente cuando escriba sus programas.
 
-##Parámetros
+## Parámetros
 
 La siguiente función que el programa define se llama `explorarCueva()`. 
 
@@ -477,7 +475,7 @@ Hola, Carolina. Tu nombre tiene 8 letras.
 
 Para cada llamada a `decirHola()`, se imprime un saludo y el largo del argumento `nombre`. Note que debido a que la hilera `Carolina`  es asignada a la variable `spam`, `decirHola(spam)` es equivalente a `decirHola('Carolina')`.
 
-## Mostrando los Resultados del Juego
+## Mostrando los resultados del juego
 
 Volviendo al código fuente del juego Reino de dragones:
 
@@ -503,7 +501,7 @@ Aquí el código imprime algo más de texto y espera por otros 2 segundos. Estas
 
 Con el suspendo en construcción, nuestro programa determinará a continuación cuál cueva tiene al dragón amigable.
 
-##Decidiendo Qué Cueva tiene el Dragón Amigable
+## Decidiendo qué cueva tiene el Dragón amigable
 
 La línea 28 llama a la función `random.randint()` que devolverá 1 ó 2. 
 
@@ -582,7 +580,7 @@ Entonces la ejecución del programa continúa en la línea 39.
 
 La línea 39 llama a la función `explorarCueva()`, pasándole el valor en `númeroDeCueva` como argumento. No sólo la ejecución salta a la línea 20, sino que el valor en `númeroDeCueva` se copia al parámetro `cuevaElegida` dentro de la función `explorarCueva()`. Esta es la función que mostrará `'¡Te regala su tesoro!'` o `'¡Te engulle de un bocado!'` dependiendo de la cueva que la jugadora elija.
 
-##Preguntando a la Jugadora si quiere Jugar de Nuevo
+## Preguntando a la jugadora si quiere jugar de nuevo
 
 Sin importar si el jugador gana o pierde, se le pregunta si quiere jugar de nuevo. 
 
