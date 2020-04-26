@@ -348,4 +348,4 @@ Los diccionarios son similares a las listas excepto que las primeras puede usar 
 
 El Ahorcado es ligeramente avanzado comparado con los juegos previos en este libro. Pero en este punto, sabe muchos de los conceptos básicos para escribir programas: variables, ciclos, funciones y los tipos de datos de Python como listas y diccionarios. Los siguientes programas en este libro seguirán siendo un desafío a dominar, pero ¡acabas de terminar la parte más empinada de la escalada!.
 
-[Previo: Capítulo 8: Escribiendo el código del ahorcado ](capitulo8.md) | [Siguiente: Capítulo 10: Gato](capitulo10.md)
+[Previo: Capítulo 8: Escribiendo el código del ahorcado ](capitulo8.md) | [Siguiente: Capítulo 10: Tres en línea](capitulo10.md)
