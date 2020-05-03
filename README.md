@@ -16,6 +16,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
  * [7 Diseñando el juego ahorcado con diagramas de flujo](capitulo7.md)
  * [8 Escribiendo el código de Ahorcado](capitulo8.md)
  * [9 Extendiendo el Ahorcado](capitulo9.md)
+ * [11  Panecillos](capitulo11.md)
 
 ## Mantenedores
 
@@ -26,6 +27,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 * [@dtec83](https://github.com/dtec83)
 * [@CespedX](https://github.com/CespedX)
 * [@JDuartePi](https://github.com/JDuartePi)
+* [@tec-ramijan](https://github.com/tec-ramijan)
 
 ## Contribuir
 
