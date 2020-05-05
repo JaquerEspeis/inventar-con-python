@@ -228,7 +228,7 @@ La última línea de código en el programa Hola mundo es otra llamada a la func
 5. print('Es un placer conocerte, ' + miNombre)
 ~~~
 
-La expresión `Gusto en conocerle', + miNombre` está rodeada por los paréntesis del `print()`. Porque los argumentos son valores únicos, Python evaluará primero esta expresión y luego pasará ese valor como el argumento. Si `miNombre` contiene el valor `'Alberto'`, la evaluación se verá así:
+La expresión `'Gusto en conocerle', + miNombre` está rodeada por los paréntesis del `print()`. Porque los argumentos son valores únicos, Python evaluará primero esta expresión y luego pasará ese valor como el argumento. Si `miNombre` contiene el valor `'Alberto'`, la evaluación se verá así:
 
 ![Evaluación de Alberto](images/00051.png "Evaluación de Alberto")
 
