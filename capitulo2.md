@@ -228,7 +228,7 @@ La última línea de código en el programa Hola mundo es otra llamada a la func
 5. print('Es un placer conocerte, ' + miNombre)
 ~~~
 
-La expresión `'Gusto en conocerle', + miNombre` está rodeada por los paréntesis del `print()`. Porque los argumentos son valores únicos, Python evaluará primero esta expresión y luego pasará ese valor como el argumento. Si `miNombre` contiene el valor `'Alberto'`, la evaluación se verá así:
+La expresión `'Gusto en conocerle, ' + miNombre` está rodeada por los paréntesis del `print()`. Porque los argumentos son valores únicos, Python evaluará primero esta expresión y luego pasará ese valor como el argumento. Si `miNombre` contiene el valor `'Alberto'`, la evaluación se verá así:
 
 ![Evaluación de Alberto](images/00051.png "Evaluación de Alberto")
 
@@ -273,3 +273,4 @@ Las funciones se usan para llevar a cabo instrucciones complicadas en el program
 La instrucción o paso en su programa donde Python está trabajando en un instante dado se llama ejecución. En el Capítulo 3, aprenderá más acerca de hacer que la ejecución del programa vaya de diferentes maneras, no sólo de arriba hacia bajo del programa. Una vez que aprenda esto, ¡estará lista para crear juegos!
 
 [Previo: Capítulo 1: La consola interactiva](capitulo1.md) | [Siguiente: Capítulo 3: Adivine el número](capitulo3.md)
+
