@@ -162,7 +162,6 @@ Traceback (most recent call last):
     myName = input()
   File "<string>", line 1, in <module>
 NameError: name 'Alberto' is not defined
-</pre>
 ~~~
 
 Para solucionar este problema, instale Python3 y vuelva a ejecutar el programa. (Vaya a "Descargar e instalar Python" en la página xxv.)
