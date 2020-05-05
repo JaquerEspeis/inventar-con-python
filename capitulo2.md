@@ -266,7 +266,7 @@ Los nombres de las variables usualmente se escriben en minúscula. Si hay más d
 
 Una vez que entienda como usar cadenas de caracteres y funciones, ya puede  comenzar a hacer programas que interactúen con las usuarias. Esto es importante porque el texto es el principal medio de comunicación entre la computadora y la usuaria. La usuaria escribe texto a través del teclado con la función `input()`, y la computadora muestra el texto en la pantalla con la función `print()`.
 
-Los cadenas de caracteres son sólo valores de un nuevo tipo de datos. Todos los valores tienen un tipo de dato, y este valor afecta cómo el operador `+` funciona. 
+Las cadenas de caracteres son sólo valores de un nuevo tipo de datos. Todos los valores tienen un tipo de dato, y este valor afecta cómo el operador `+` funciona. 
 
 Las funciones se usan para llevar a cabo instrucciones complicadas en el programa. Python tiene muchas funciones preprogramadas de las que aprenderá más adelante en este libro. Las llamadas a funciones pueden ser usadas en expresiones donde sea que un valor sea utilizado. 
 
