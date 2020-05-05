@@ -207,7 +207,7 @@ Un valor entre los paréntesis en una llamada a función es un *argumento*.  El 
 
 ## La función `input()`
 
-La línea 4 es una declaración de asignación de una variable, *myName*, y una función de llamada, `input()`:
+La línea 4 es una declaración de asignación de una variable, `miNombre`, y una función de llamada, `input()`:
 
 ~~~Python
 4. miNombre = input()
@@ -215,11 +215,11 @@ La línea 4 es una declaración de asignación de una variable, *myName*, y una 
 
 Cuando `input()` es llamada, el programa espera para que la usuaria escriba un texto. El texto de la cadena de caracteres que la usuaria escribe se convierte en el valor al que evalúa la llamada a función. Las llamadas a función pueden ser usadas dentro de expresiones en cualquier lugar donde un valor pueda ser usado.
 
-El valor al que evalúa la llamada a función se llama valor de retorno. (De hecho, "el valor al que evalúa la llamada a función retorna" significa lo mismo que "el valor al que evalúa la llamada a función".) En este caso, el valor de retorno de la función `input()` es la cadena de caracteres que la usuaria escribió: su nombre. Si la usuaria ingresa *Alberto*, la llamada a función `input()` evalúa el la cadena de caracteres 'Alberto'. La evaluación se ve como esto:
+El valor al que evalúa la llamada a función se llama valor de retorno. (De hecho, "el valor al que evalúa la llamada a función retorna" significa lo mismo que "el valor al que evalúa la llamada a función".) En este caso, el valor de retorno de la función `input()` es la cadena de caracteres que la usuaria escribió: su nombre. Si la usuaria ingresa *Alberto*, la llamada a función `input()` evalúa el la cadena de caracteres '`Alberto'`. La evaluación se ve como esto:
 
 ![Evaluación de función](images/00049.png "Evaluación de función")
 
-Así es cómo el valor de la cadena de caracteres es almacenado en la variable miNombre.
+Así es cómo el valor de la cadena de caracteres es almacenado en la variable `miNombre`.
 
 ## Expresiones en llamadas a funciones
 
@@ -229,7 +229,7 @@ La última línea de código en el programa Hola mundo es otra llamada a la func
 5. print('Es un placer conocerte, ' + miNombre)
 ~~~
 
-La expresión `Gusto en conocerle', + miNombre` está rodeada por los paréntesis del `print()`. Porque los argumentos son valores únicos, Python evaluará primero esta expresión y luego pasará ese valor como el argumento. Si miNombre contiene el valor 'Alberto', la evaluación se verá así:
+La expresión `Gusto en conocerle', + miNombre` está rodeada por los paréntesis del `print()`. Porque los argumentos son valores únicos, Python evaluará primero esta expresión y luego pasará ese valor como el argumento. Si `miNombre` contiene el valor `'Alberto'`, la evaluación se verá así:
 
 ![Evaluación de Alberto](images/00051.png "Evaluación de Alberto")
 
@@ -237,7 +237,7 @@ Así es como el programa saluda a la usuaria por su nombre.
 
 
 ## El final del programa
-Una vez que el programa ejecuta la última línea, *termina* o *sale*. Esto significa que el programa para de ejecutarse. Python olvida todos los valores de las variables, incluida la cadena de caracteres almacenada en *miNombre*. Si ejecuta el programa otra vez y escribe un nombre diferente, el programa pensará que es su nombre:
+Una vez que el programa ejecuta la última línea, *termina* o *sale*. Esto significa que el programa para de ejecutarse. Python olvida todos los valores de las variables, incluida la cadena de caracteres almacenada en `miNombre`. Si ejecuta el programa otra vez y escribe un nombre diferente, el programa pensará que es su nombre:
 
 ~~~Python
 Hola mundo
@@ -251,14 +251,13 @@ Recuerde, la computadora hace exactamente lo que la programó para hacer. Las co
 ~~~Python
 Hola mundo
 ¿Cuál es su nombre?
-<b>caca</b>
+caca
 Es un placer conocerte, caca.
-</pre>
 ~~~
 
 ## Nombrar variables
 
-Dar a las variables un nombre descriptivo hace más fácil entender lo que el programa hace. Usted podría haber llamado la variable *myName* como *abrahamLincoln* o *nOmBrE*, y Python habría ejecutado el programa de la misma manera. Pero estos nombres realmente no nos dicen mucho acerca de qué contiene el valor de la variable. Como se discutió en el Capítulo 1, si usted se estuviera mudando a una nueva casa y etiqueta todas las cajas como *Cosas*, ¡eso no sería de ninguna ayuda! Los ejemplos de la consola interactiva que se muestran en este libro usan nombres como *spam*, *eggs*, y *bacon* porque los nombres de las variables en estos ejemplos no importan. De todas maneras, los programas de este libro utilizan nombres descriptivos, y así deben estar en sus programas.
+Dar a las variables un nombre descriptivo hace más fácil entender lo que el programa hace. Usted podría haber llamado la variable `miNombre` como *abrahamLincoln* o *nOmBrE*, y Python habría ejecutado el programa de la misma manera. Pero estos nombres realmente no nos dicen mucho acerca de qué contiene el valor de la variable. Como se discutió en el Capítulo 1, si usted se estuviera mudando a una nueva casa y etiqueta todas las cajas como *Cosas*, ¡eso no sería de ninguna ayuda! Los ejemplos de la consola interactiva que se muestran en este libro usan nombres como *spam*, *eggs*, y *bacon* porque los nombres de las variables en estos ejemplos no importan. De todas maneras, los programas de este libro utilizan nombres descriptivos, y así deben estar en sus programas.
 
 Los nombres de las variables son sensibles a mayúsculas o minúsculas,  esto significa que si alguna letra del nombre de las variables está en minúscula o mayúscula, lo tomará como si fuera una variable distinta. Es esta manera *spam*, *SPAM*, *Spam* y *sPAM* son cuatro variables diferentes en Python. Cada una contiene sus diferentes valores separados unos de otros. Es una mala idea tener variables que combinen desordenadamente las mayúsculas con las minúsculas en su programa. En lugar de eso use nombres descriptivos para sus variables.
 
