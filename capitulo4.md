@@ -56,7 +56,7 @@ Si obtiene errores después de escribir este código, compárelo con el código 
 13. print('En que el bombero y el barco tienen casco.')
 14. input()
 15. print('¿Y la familia?', end='')
-16. print(' -Bien, gracias.')
+16. print('-Bien, gracias.')
 ~~~
 
 ## ¿Cómo funciona el código?
@@ -89,9 +89,9 @@ Las líneas de la 5 a la 8 imprimen la pregunta y la respuesta del siguiente chi
 En la línea 5 hay una barra invertida justo antes de la comilla simple (note que `\` es una barra invertida y que `/` es barra inclinada). Esta barra invertida indica que la letra que se encuentra justo después es un «carácter de escape» . Un *carácter de escape* le permite imprimir caracteres especiales que son difíciles o imposibles de ingresar al código fuente, como la comilla simple en una cadena de caracteres que empieza y termina con comillas simples.
 En este caso, si no incluimos la barra invertida, la comilla simple en `pa\'l` se hubiera interpretado como el final de la cadena de caracteres. Pero esta comilla necesita *ser parte* de la cadena de caracteres. La comilla simple con escape le indica a Python que debe incluir la comilla simple en la cadena de caracteres.
 
-Ahora, ¿cómo se podría mostrar una barra invertida? Si se ejecuta la siguiente línea de código desde una consola, no funcionaría:
+Ahora, ¿cómo se podría mostrar una barra invertida? Si se ejecuta la siguiente línea de código desde una «shell», no funcionaría:
 
-Vaya de su programa *chistes.py* hacia la consola interactiva y escriba la sentencia `print()`:
+Vaya de su programa *chistes.py* hacia la «shell» interactiva y escriba la sentencia `print()`:
 
 ~~~Python
 >>> print('Ellas se fueron volando en un helicóptero verde\turquesa.')
@@ -125,7 +125,7 @@ La tabla 4-1 es una lista de algunos caracteres de escape en Python, incluyendo 
 Existen más caracteres de escape en Python, pero estos son los caracteres que más probablemente va a necesitar durante la creación de juegos.
 
 ## Comillas Simples y Dobles
-Mientras todavía estamos en una consola interactiva, veamos un poco más a fondo a las comillas. Las cadenas de caracteres no siempre tienen que estar entre comillas simples en Python. También se pueden poner entre comillas dobles. Estas dos líneas imprimen la misma cosa:
+Mientras todavía estamos en una «shell» interactiva, veamos un poco más a fondo a las comillas. Las cadenas de caracteres no siempre tienen que estar entre comillas simples en Python. También se pueden poner entre comillas dobles. Estas dos líneas imprimen la misma cosa:
 
 ~~~Python
 >>> print('Hola Mundo')
@@ -150,7 +150,7 @@ También note que al igual que necesita la barra invertida `\'`, para tener una 
 Le pedí prestado el carro a Pedro pa'ir al pueblo. Él dijo, "Seguro."
 ~~~
 
-Se usan comillas simples para encerrar a una cadena de caracteres, por lo que es necesario agregar una barra invertida antes de la comilla simple en `pa'ir`. Pero las comillas dobles en `"Seguro"` no necesitan una barra invertida. El intérprete de Python tiene inteligencia suficiente para saber que si una cadena de caracteres comienza con un tipo de comillas, el otro tipo de comillas no significa que la cadena de caracteres está terminada.
+Se usan comillas simples para encerrar a una cadena de caracteres, por lo que es necesario agregar una barra invertida antes de la comilla simple en `pa\'ir`. Pero las comillas dobles en `"Seguro"` no necesitan una barra invertida. El intérprete de Python tiene inteligencia suficiente para saber que si una cadena de caracteres comienza con un tipo de comillas, el otro tipo de comillas no significa que la cadena de caracteres está terminada.
 
 Ahora veamos este otro ejemplo:
 
@@ -159,14 +159,14 @@ Ahora veamos este otro ejemplo:
 Ella dijo, "No puedo creer que lo dejaste llevarse el carro pa'l pueblo"
 ~~~
 
-La cadena de caracteres está encerrada entre comillas dobles, por lo que es necesario agregar barras invertidas para toda las comillas dobles que se encuentren dentro de la cadena de caracteres. No es necesario escapar la comilla simple usada en `pa'l.
+La cadena de caracteres está encerrada entre comillas dobles, por lo que es necesario agregar barras invertidas para toda las comillas dobles que se encuentren dentro de la cadena de caracteres. No es necesario escapar la comilla simple usada en *pa'l*.
 
 Para resumir, en las cadenas de caracteres de comilla simple, no es necesario escapar las comillas dobles pero es necesario escapar las comillas simples, y en las cadenas de caracteres de comilla doble, no es necesario escapar las comillas simples pero sí las comillas dobles.
 
 
 ## El argumento de palabra clave `end` en la función print()
 
-Ahora regresemos al archivo *chistes.py* y veamos las líneas de la 9 a las 6:
+Ahora regresemos al archivo *chistes.py* y veamos las líneas de la 9 a la 16:
 
 ~~~Python
  9. print('¿En qué se parecen una familia, un bombero y un barco?')
@@ -176,7 +176,7 @@ Ahora regresemos al archivo *chistes.py* y veamos las líneas de la 9 a las 6:
 13. print('En que el bombero y el barco tienen casco.')
 14. input()
 15. print('¿Y la familia?', end='')
-16. print(' -Bien, gracias.')
+16. print('-Bien, gracias.')
 ~~~
 
 ¿Notó que el segundo parámetro en la función `print()` de la línea 15?. Normalmente, `print()` añade una nueva línea al final de la cadena de caracteres que imprime. Por esta razón, una función `print()` en blanco tan solo imprimirá una nueva línea. Pero la función `print()` tiene la opción de un segundo parámetro: `end` (fin en inglés).
@@ -188,10 +188,10 @@ Cuando ejecutamos esta sección de código, la salida sería:
 ¿En qué se parecen una familia, un bombero y un barco?
 No sé... ¿en qué se parecen?
 En que el bombero y el barco tienen casco.
-¿Y la familia? -Bien, gracias.
+¿Y la familia?-Bien, gracias.
 ~~~
 
-Pasando una cadena de caracteres en blanco usando `end`, la función `print()` no añadirá una nueva linea al final de la cadena de caracteres, en lugar de esto añadirá una cadena de caracteres en blanco. Por esta razón ' `-Bien, gracias.'` aparece junto a la línea anterior, en lugar de en una nueva línea. No hubo una nueva línea después de que fue imprimida la cadena de caracteres `'¿Y la familia?'`.
+Pasando una cadena de caracteres en blanco usando `end`, la función `print()` no añadirá una nueva linea al final de la cadena de caracteres, en lugar de esto añadirá una cadena de caracteres en blanco. Por esta razón  `'-Bien, gracias.'` aparece junto a la línea anterior, en lugar de en una nueva línea. No hubo una nueva línea después de que fue imprimida la cadena de caracteres `'¿Y la familia?'`.
 
 ## Resumen
 
