@@ -7,15 +7,16 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 ## Tabla de contenido
 
  * [Introducción](introduccion.md)
- * [1 La consola interactiva](capitulo1.md)
- * [2 Escribiendo programas](capitulo2.md)
- * [3 Adivine el número](capitulo3.md)
- * [4 Un programa que cuenta Chistes](capitulo4.md)
- * [5 Reino de dragones](capitulo5.md)
- * [6 Usando el depurador](capitulo6.md)
- * [7 Diseñando el juego ahorcado con diagramas de flujo](capitulo7.md)
- * [8 Escribiendo el código de Ahorcado](capitulo8.md)
- * [9 Extendiendo el Ahorcado](capitulo9.md)
+ * [ 1 La consola interactiva](capitulo1.md)
+ * [ 2 Escribiendo programas](capitulo2.md)
+ * [ 3 Adivine el número](capitulo3.md)
+ * [ 4 Un programa que cuenta Chistes](capitulo4.md)
+ * [ 5 Reino de dragones](capitulo5.md)
+ * [ 6 Usando el depurador](capitulo6.md)
+ * [ 7 Diseñando el juego ahorcado con diagramas de flujo](capitulo7.md)
+ * [ 8 Escribiendo el código de Ahorcado](capitulo8.md)
+ * [ 9 Extendiendo el Ahorcado](capitulo9.md)
+ * [10 Tres en línea](capitulo10.md)
  * [11  Panecillos](capitulo11.md)
 
 ## Mantenedores
