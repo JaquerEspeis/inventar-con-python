@@ -32,9 +32,9 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
 
 ## Contribuir
 
-La traducción de este libro la estamos haciendo en comunidad. Invitamos a participar a todas las personas que quieran aprender o enseñar sobre Python.
+La traducción de este libro la estamos haciendo en comunidad. Invitamos a participar a todas las personas que quieran aprender o enseñar sobre Python3. Tenemos [una guía](https://github.com/JaquerEspeis/inventar-con-python/wiki/Gu%C3%ADa-para-contribuir-con-la-traducci%C3%B3n) donde queremos ayudarle para que sus aportes lleguen al repositorio.
 
-Si saben inglés y español, nos pueden ayudar [revisando las traducciones en progreso](https://github.com/JaquerEspeis/inventar-con-python/pulls). O pueden traducir un nuevo capítulo; para esto [reporten un issue](https://github.com/JaquerEspeis/inventar-con-python/issues/new) con el número del capítulo que quieren traducir, para que no dupliquemos el trabajo. La traducción de la edición anterior puede servir como base para sus traducciones: https://inventwithpython.com/es/. Por favor tenga presente las [pautas de traducción](https://github.com/JaquerEspeis/inventar-con-python/wiki/Pautas-de-traducci%C3%B3n). 
+Si saben inglés y español, nos pueden ayudar [revisando las traducciones en progreso](https://github.com/JaquerEspeis/inventar-con-python/pulls). O pueden traducir un nuevo capítulo; para esto [reporten un issue](https://github.com/JaquerEspeis/inventar-con-python/issues/new) con el número del capítulo que quieren traducir, para que no dupliquemos el trabajo. La traducción de la edición anterior puede servir como base para sus traducciones: https://inventwithpython.com/es/.
 
 Para quienes no saben inglés, igual nos pueden ayudar revisando las traducciones ya aceptadas, que van a encontrar en la [Tabla de contenido](#tabla-de-contenido).
 
