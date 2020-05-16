@@ -544,4 +544,4 @@ Este capítulo se introdujeron algunas nuevas funciones y métodos - `shuffle()`
 
 El siguiente capítulo no nos enfocaremos en programar pero sí en conceptos - Cordenadas cartesianas y números negativos - que serán necesarios para los juegos de los siguientes capítulos del libro. Estos conceptos matemáticos no solamente son utilizados en en los juegos Sonar, Reversi y Evasor, sino además en muchos otros juegos. Si ya conoce estos conceptos, igual puede hojear el siguiente capítulo para refrescarlos.
 
-[Previo: Capítulo 10: Tres en línea ](capitulo10.md) | [Siguiente: Capítulo 12: El sistema de coordenadas cartesianas](capitulo12.md)
+[Previo: Capítulo 10: Tres en línea ](capitulo10.md) | [Siguiente: Capítulo 12: El sistema de coordenadas Cartesianas](capitulo12.md)

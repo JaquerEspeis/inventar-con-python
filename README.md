@@ -18,6 +18,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
  * [ 9 Extendiendo el Ahorcado](capitulo9.md)
  * [10 Tres en línea](capitulo10.md)
  * [11  Panecillos](capitulo11.md)
+ * [12  El sistema de coordenadas Cartesianas](capitulo12.md)
 
 ## Mantenedores
 
