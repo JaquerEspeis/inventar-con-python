@@ -154,7 +154,7 @@ Esto crea una rama en el diagrama de flujo, como está mostrado en la figura 7-4
 
 *Figura 7-4: La rama tiene dos flechas que van hacia cajas separadas.*
 
-Si la letra no está en la palabra secreta, revise si la jugadora ha adivinado todas las letras y ha ganado el juego. Si la letra no está en la palabra secreta, revise si el ahorcado está completo y la jugadora ha perdido. Agregue cajas para esos casos también.
+Si la letra está en la palabra secreta, revise si la jugadora ha adivinado todas las letras y ha ganado el juego. Si la letra no está en la palabra secreta, revise si el ahorcado está completo y la jugadora ha perdido. Agregue cajas para esos casos también.
 
 El diagrama de flujo ahora se ve como en la Figura 7-5.
 
@@ -162,11 +162,11 @@ El diagrama de flujo ahora se ve como en la Figura 7-5.
 
 *Figura 7-5 : Después de la rama, los pasos continúan en caminos separados.*
 
-No se necesita una flecha desde la caja «Letter is in secret word» hacia la caja «Player ran out of guesses and loses», porque es imposible para la jugadora perder si acaba de adivinar de forma correcta. También es imposible para la jugadora ganar si acaban de adivinar de forma incorrecta, entonces no es necesario dibujar una flecha en esa tampoco.
+No se necesita una flecha desde la caja «La letra está en la palabra secreta» hacia la caja «Ha agotado los intentos y pierde», porque es imposible para la jugadora perder si acaba de adivinar de forma correcta. También es imposible para la jugadora ganar si acaban de adivinar de forma incorrecta, entonces no es necesario dibujar una flecha en esa tampoco.
 
 ## Terminando o reiniciando el juego
 
-Una vez que la jugadora ha ganado o perdido, pregúnteles si desean jugar de nuevo con una nueva palabra secreta. Si la jugadora no quiere jugar de nuevo, el programa termina; de otra forma, el programa continua y piensa en una palabra secreta nueva. Esto se muestra en la figura 7-6.
+Una vez que la jugadora ha ganado o perdido, pregúntele si desea jugar de nuevo con una nueva palabra secreta. Si la jugadora no quiere jugar de nuevo, el programa termina; de otra forma, el programa continua y piensa en una palabra secreta nueva. Esto se muestra en la figura 7-6.
 ![Imagen del diagrama de flujo](images/00091.png)
 
 *Figura 7-6: La rama del diagrama de flujo después de preguntarle a la jugadora si quiere jugar nuevamente.*
@@ -189,7 +189,7 @@ Esta nueva caja se muestra en la Figura 7-8.
 
 *Figura 7-8: Agregue un nuevo paso en caso de que la jugadora adivine una letra que ya haya adivinado.*
 
-Si la jugadora adivina la misma letra dos veces, el diagrama de flujo conduce de nuevo a la caja de «Pregunte a la jugadora por una letra».
+Si la jugadora adivina la misma letra dos veces, el diagrama de flujo conduce de nuevo a la caja de «Invitar a la jugadora a adivinar una letra».
 
 ## Ofreciendo retroalimentación a la jugadora
 
@@ -198,11 +198,11 @@ El programa deber mostrarle el dibujo de la persona Ahorcada y la palabra secret
 Estas pistas visuales les permiten a ellas ver de cerca si están ganando o perdiendo el juego.
 
 Esta información es actualizada cada vez que la jugadora adivina una letra.
-Agregue una caja de «Mostrar el dibujo y el espacio en blanco al jugadora» en el diagrama de flujo entre la caja de «Imagine una palabra secreta» y la caja de «Pregúntele a la jugadora una letra», como se muestra en la Figura 7-9.
+Agregue una caja de «Mostrar el tablero y espacio vacíos a la jugadora» en el diagrama de flujo entre la caja de «Generar una palabra secreta» y la caja de «Invitar a la jugadora a adivinar una letra», como se muestra en la Figura 7-9.
 
 ![Imagen del diagrama de flujo](images/00095.png)
 
-*Figura 7-9: Agregue una caja de «Muestre el dibujo y los espacios en blanco a la jugadora» para darle retroalimentación.*
+*Figura 7-9: Agregue una caja de «Mostrar el tablero y espacio vacíos a la jugadora» para darle retroalimentación.*
 
 ¡Eso se ve bien! El diagrama de flujo mapea completamente el orden de todo lo que puede pasar en el juego de Ahorcado. Cuando usted diseña sus propios juegos, un diagrama de flujo puede ayudarle a recordar todo el código que necesita escribir.
 
