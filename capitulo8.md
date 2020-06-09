@@ -9,9 +9,9 @@ El juego de este capítulo introduce muchos conceptos nuevos, pero no se preocup
 ***
 Temas cubiertos en este capítulo:
 * Listas
-* El operador  `n` 
+* El operador  `in` 
 * Métodos
-* Los métodos de string `spli()`, `lower()`, `upper()`, `startswith()` y `endswith()`.
+* Los métodos de string `split()`, `lower()`, `upper()`, `startswith()` y `endswith()`.
 * Sentencias `elif`
 ***
 
