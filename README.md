@@ -19,6 +19,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
  * [10 Tres en línea](capitulo10.md)
  * [11  Panecillos](capitulo11.md)
  * [12  El sistema de coordenadas Cartesianas](capitulo12.md)
+ * [13  Búsqueda del tesoro con sonar](capitulo13.md)
 
 ## Mantenedores
 
