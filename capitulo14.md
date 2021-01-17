@@ -456,7 +456,7 @@ La computadoras son buenas haciendo matemática. Cuando creamos un sistema para 
 
 Mientra que nuestro programa de cifrado César puede encriptar mensajes que los mantendrán secretos de personas que tienen que descubrirlos utilizando papel y lápiz, el programa no los mantendrá secretos de persona que conozcan cómo hacer que las computadoras procesen información. (Nuestro modo de fuerza bruta prueba esto.)
 
-En el capítulo 15, crearemos un Reversegam (también conocido como Reversi o Otelo). La IA que juega este juego es mucho más avanzada que la IA que jugaba Tres en línea en el capítulo 10. De hecho, ¡es tan buena que muchas veces usted no le podrá ganar!
+En el capítulo 15, crearemos un Reversi (también conocido como Othello). La IA que juega este juego es mucho más avanzada que la IA que jugaba Tres en línea en el capítulo 10. De hecho, ¡es tan buena que muchas veces usted no le podrá ganar!
 
-[Previo: Capítulo 13: Búsqueda del tesoro con sonar ](capitulo13.md) | [Siguiente: Capítulo 15:  El juego Reversegam ](capitulo15.md)
+[Previo: Capítulo 13: Búsqueda del tesoro con sonar ](capitulo13.md) | [Siguiente: Capítulo 15:  Reversi ](capitulo15.md)
 

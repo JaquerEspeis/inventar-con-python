@@ -47,8 +47,8 @@ En la mayoría de los capítulos de este libro, se presenta y explica un simple 
 * **Capítulo 12: El sistema de coordenadas cartesianas** explica el sistema de coordenadas cartesianas, que usará en los siguientes juegos.
 * En el **Capítulo 13: Búsqueda del tesoro con sonar**, aprenderá cómo escribir un juego de búsqueda del tesoro en el cual la jugadora busca en el océano los cofres del tesoro.
 * En el **Capítulo 14: Código del César**, creará un programa de cifrado sencillo que le permite escribir y decodificar mensajes secretos.
-* En el **Capítulo 15: El juego reversegam**, usted programará un juego avanzado de humano contra computadora del tipo reversi que tiene un oponente de inteligencia artificial casi imbatible.
-* **Capítulo 16: Simulación de IA de reversegam** expande en el juego de reversegam del Capítulo 15 para hacer múltiples IAs que compiten en juegos de computadora contra computadora.
+* En el **Capítulo 15: Reversi**, usted programará un juego avanzado de humano contra computadora del tipo reversi que tiene un oponente de inteligencia artificial casi imbatible.
+* **Capítulo 16: Simulación de IA de Reversi** expande en el juego de Reversi del Capítulo 15 para hacer múltiples IAs que compiten en juegos de computadora contra computadora.
 * **Capítulo 17: Creando gráficos** introduce el módulo de Python pygame y le muestra cómo usarlo para dibujar gráficos de 2D.
 * **Capítulo 18: Animando gráficos** le muestra cómo animar gráficos con pygame.
 * En el **Capítulo 19: Detección de colisiones**, aprenderá cómo detectar cuando objetos chocan unos con otros en juegos 2D.
