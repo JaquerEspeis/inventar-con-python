@@ -21,6 +21,7 @@ de [Al Sweigart](https://twitter.com/AlSweigart).
  * [12  El sistema de coordenadas Cartesianas](capitulo12.md)
  * [13  Búsqueda del tesoro con sonar](capitulo13.md)
  * [14  Código del César](capitulo14.md)
+ * [15  Reversi](capitulo15.md)
 
 ## Mantenedores
 
